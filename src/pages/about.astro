@@ -2,7 +2,6 @@
 import { Icon } from "astro-icon/components";
 import Layout from "@/layouts/Layout.astro";
 import Section from "@/components/Section.astro";
-import WorkPositionCard from "@/components/Resume/WorkPositionCard.astro";
 import EducationCard from "@/components/Resume/EducationCard.astro";
 import SkillGroup from "@/components/Resume/SkillGroup.astro";
 import Skill from "@/components/Resume/Skill.astro";
@@ -94,37 +93,45 @@ import Skill from "@/components/Resume/Skill.astro";
             </div>
         </Section>
 
-        <!-- Experiencia Profesional -->
+        <!-- Experiencia Profesional (Tarjetas HTML sin fechas) -->
         <Section title="Experiencia Profesional" id="experience">
             <div class="flex flex-col gap-6">
-                <WorkPositionCard
-                    title="Prácticas Extracurriculares"
-                    location="NTTDATA"
-                    description="Orquestación de datos y análisis en la nube utilizando Microsoft Fabric. Desarrollo de soluciones low-code y automatización de flujos de trabajo con Power Apps y Power Automate. Participación en procesos de extracción, transformación y carga (ETL) de datos."
-                />
+                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Prácticas Extracurriculares</h3>
+                        <span class="text-xs font-medium text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-md">NTTDATA</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Orquestación de datos y análisis en la nube utilizando Microsoft Fabric. Desarrollo de soluciones low-code y automatización de flujos de trabajo con Power Apps y Power Automate. Participación en procesos de extracción, transformación y carga (ETL) de datos.</p>
+                </div>
             </div>
         </Section>
 
-        <!-- Proyectos y Tesis -->
+        <!-- Proyectos y Tesis (Tarjetas HTML sin fechas) -->
         <Section title="Proyectos y Tesis" id="projects">
             <div class="flex flex-col gap-6">
-                <WorkPositionCard
-                    title="Sistema Inteligente de Dynamic Pricing (TFM)"
-                    location="UCM, Madrid"
-                    description="Sistema Inteligente de Dynamic Pricing y Optimización de Capacidad en el Transporte Interurbano mediante Deep Reinforcement Learning. Aplicado como motor de precios dinámicos para Renfe."
-                />
+                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Sistema Inteligente de Dynamic Pricing (TFM)</h3>
+                        <span class="text-xs font-medium text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-md">UCM, Madrid</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Sistema Inteligente de Dynamic Pricing y Optimización de Capacidad en el Transporte Interurbano mediante Deep Reinforcement Learning. Aplicado como motor de precios dinámicos para Renfe.</p>
+                </div>
 
-                <WorkPositionCard
-                    title="Análisis de Influencers Virtuales (TFM)"
-                    location="UGR, Granada"
-                    description="Análisis del impacto y percepción de los Influencers Virtuales. Diseño del estudio y modelado de ecuaciones estructurales (PLS-SEM) a partir de datos de encuestas para extraer insights de comportamiento y métricas de negocio."
-                />
-                
-                <WorkPositionCard
-                    title="Geometría de la Alhambra (TFG)"
-                    location="UGR, Granada"
-                    description="Proyecto de divulgación científica combinando rigor académico y creatividad, centrado en el modelado y análisis de la geometría de los mosaicos de la Alhambra."
-                />
+                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Análisis de Influencers Virtuales (TFM)</h3>
+                        <span class="text-xs font-medium text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-md">UGR, Granada</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Análisis del impacto y percepción de los Influencers Virtuales. Diseño del estudio y modelado de ecuaciones estructurales (PLS-SEM) a partir de datos de encuestas para extraer insights de comportamiento y métricas de negocio.</p>
+                </div>
+
+                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Geometría de la Alhambra (TFG)</h3>
+                        <span class="text-xs font-medium text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-md">UGR, Granada</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Proyecto de divulgación científica combinando rigor académico y creatividad, centrado en el modelado y análisis de la geometría de los mosaicos de la Alhambra.</p>
+                </div>
             </div>
         </Section>
 

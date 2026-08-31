@@ -23,7 +23,7 @@ src/
 │   ├── Header.astro    # Floating pill navbar
 │   ├── Footer.astro
 │   ├── Section.astro
-│   └── ...
+│   └──...
 ├── content/
 │   └── blog/           # MDX blog posts
 ├── icons/              # Custom SVG icons

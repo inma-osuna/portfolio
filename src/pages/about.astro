@@ -19,10 +19,10 @@ import Skill from "@/components/Resume/Skill.astro";
         <section class="flex flex-col gap-4 max-w-2xl">
             <h1 class="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">Sobre mí</h1>
             <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                Soy graduada en Matemáticas y Máster en Técnicas Cuantitativas por la UGR. Combino una sólida base matemática con habilidades avanzadas en ingeniería de datos para resolver problemas de negocio complejos. 
+                Soy graduada en Matemáticas y Máster en Técnicas Cuantitativas por la UGR, con especialización finalizada en Big Data, Data Science e Inteligencia Artificial por la UCM. Combino una sólida base matemática con habilidades avanzadas en ingeniería de datos para resolver problemas de negocio complejos[cite: 2]. 
             </p>
             <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                Me apasiona el rigor analítico, la automatización y el desarrollo de sistemas inteligentes que transforman grandes volúmenes de información en soluciones reales. Cuando no estoy programando infraestructuras en la nube o entrenando modelos, me encontrarás preparándome para mi próxima carrera de 10 kilómetros del 18 de octubre.
+                Me apasiona el rigor analítico, la automatización y el desarrollo de sistemas inteligentes que transforman grandes volúmenes de información en decisiones estratégicas[cite: 2]. Cuando no estoy programando infraestructuras en la nube o analizando datos, me encontrarás preparándome para mi próxima carrera de 10 kilómetros del 18 de octubre.
             </p>
         </section>
 
@@ -65,7 +65,7 @@ import Skill from "@/components/Resume/Skill.astro";
             </div>
         </Section>
 
-        <!-- Experience -->
+        <!-- Experience & Projects -->
         <Section title="Experiencia & Proyectos" id="experience">
             <div class="flex flex-col gap-8">
                 <WorkPositionCard
@@ -74,7 +74,7 @@ import Skill from "@/components/Resume/Skill.astro";
                     startDate="Enero 2025"
                     endDate="Mayo 2026"
                     location="NTTDATA (100% Remoto)"
-                    description="Orquestación de datos y análisis en la nube utilizando Microsoft Fabric. Desarrollo de soluciones low-code y automatización de flujos con Power Apps y Power Automate. Participación en procesos ETL de datos. Puesto ejecutado completamente en remoto por falta de espacio físico en la oficina."
+                    description="Orquestación de datos y análisis en la nube utilizando Microsoft Fabric[cite: 2]. Desarrollo de soluciones low-code y automatización de flujos con Power Apps y Power Automate[cite: 2]. Participación en procesos ETL de datos[cite: 2]. Puesto ejecutado completamente en remoto por falta de espacio físico en la oficina."
                 >
                     <Icon name="devicon:azure" class="w-7 h-7" />
                     <Icon name="devicon:microsoftsqlserver" class="w-7 h-7" />
@@ -85,36 +85,45 @@ import Skill from "@/components/Resume/Skill.astro";
                     href="#"
                     startDate="2026"
                     location="UCM, Madrid"
-                    description="Sistema de Dynamic Pricing y Optimización de Capacidad en el Transporte Interurbano mediante Deep Reinforcement Learning. Aplicado como motor de precios dinámicos utilizando PySpark y Streamlit."
+                    description="Sistema de Dynamic Pricing y Optimización de Capacidad en el Transporte Interurbano mediante Deep Reinforcement Learning[cite: 2]. Aplicado como motor de precios dinámicos para Renfe utilizando PySpark y Streamlit."
                 >
                     <Icon name="devicon:python" class="w-7 h-7" />
                     <Icon name="devicon:apachespark" class="w-7 h-7" />
                 </WorkPositionCard>
 
                 <WorkPositionCard
-                    title="Geometría de la Alhambra (TFG)"
-                    href="https://www.tiktok.com/@inmaosm?is_from_webapp=1&sender_device=pc"
-                    startDate="Dic 2025"
+                    title="Análisis de Influencers Virtuales (TFM)"
+                    href="#"
+                    startDate="2026"
                     location="UGR, Granada"
-                    description="Proyecto de divulgación científica combinando rigor académico y creatividad, centrado en el modelado y análisis de la geometría de los mosaicos de la Alhambra. Análisis de los 17 grupos cristalográficos plasmado en 19 vídeos educativos publicados en TikTok."
+                    description="Análisis del impacto y percepción de los Influencers Virtuales. Diseño del estudio y modelado de ecuaciones estructurales (PLS-SEM) a partir de datos de encuestas para extraer insights de comportamiento y métricas de negocio[cite: 2]."
                 >
                     <Icon name="devicon:r" class="w-7 h-7" />
                 </WorkPositionCard>
                 
+                <WorkPositionCard
+                    title="Geometría de la Alhambra (TFG)"
+                    href="#"
+                    startDate="2025"
+                    location="UGR, Granada"
+                    description="Proyecto de divulgación científica combinando rigor académico y creatividad, centrado en el modelado y análisis de la geometría de los mosaicos de la Alhambra[cite: 2]. Análisis de los 17 grupos cristalográficos plasmado en 19 vídeos educativos publicados en TikTok."
+                >
+                    <Icon name="devicon:latex" class="w-7 h-7" />
+                </WorkPositionCard>
             </div>
         </Section>
 
-       <!-- Education -->
+        <!-- Education -->
         <Section title="Educación">
             <EducationCard
-                title="Máster en Ciencia de Datos, Big Data & IA"
+                title="Máster en Ciencia de Datos, Big Data & IA (Finalizado)"
                 href="#"
                 startDate="Sep 2025"
                 endDate="Sep 2026"
                 location="Universidad Complutense de Madrid"
             />
             <EducationCard
-                title="Máster en Técnicas Cuantitativas en Gestión Empresarial"
+                title="Máster en Técnicas Cuantitativas en Gestión Empresarial (Finalizado)"
                 href="#"
                 startDate="Sep 2025"
                 endDate="Jul 2026"
@@ -125,10 +134,10 @@ import Skill from "@/components/Resume/Skill.astro";
                 href="#"
                 startDate="2025"
                 endDate="2026"
-                location="Fundación AI Granada, T-Systems y Google Cloud"
+                location="Fundación AI Granada, T-Systems y Google Cloud[cite: 2]"
             />
             <EducationCard
-                title="Grado en Matemáticas"
+                title="Grado en Matemáticas (Finalizado)"
                 href="#"
                 startDate="Sep 2020"
                 endDate="Dic 2025"

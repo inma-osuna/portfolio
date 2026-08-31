@@ -62,26 +62,6 @@ const posts: CollectionEntry<"blog">[] = (await getCollection("blog"))
             <a href="/about#experience" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Ver toda la experiencia &rarr;</a>
         </Section>
 
-        <!-- Blog Highlights -->
-        <Section title="Últimos Artículos">
-            <div class="flex flex-col gap-10">
-                {posts.map((post) => (
-                    <article class="flex flex-col gap-2">
-                        <span class="text-sm text-neutral-500">{formatDate(post.data.publishedAt)}</span>
-                        <a href={"/blog/" + post.id} class="hover:underline">
-                            <h3 class="text-xl font-bold text-neutral-900 dark:text-neutral-100">
-                                {post.data.title}
-                            </h3>
-                        </a>
-                        {post.data.description && (
-                            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                                {post.data.description}
-                            </p>
-                        )}
-                    </article>
-                ))}
-            </div>
-            <a href="/blog" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Ver todos los artículos &rarr;</a>
-        </Section>
+        
     </div>
 </Layout>

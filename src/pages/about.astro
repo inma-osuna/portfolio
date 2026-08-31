@@ -27,15 +27,18 @@ import Skill from "@/components/Resume/Skill.astro";
 
         <!-- Languages & Info -->
         <Section title="Idiomas & Información">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
                     <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Idiomas</h3>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Español: Nativo  <br>Inglés: Nivel C1  </p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Español: Nativo<br>Inglés: Nivel C1</p>
                 </div>
                 <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
-                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Información Adicional</h3>
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Permiso de Conducir</h3>
                     <p class="text-sm text-neutral-600 dark:text-neutral-400">Permiso de conducir tipo B y disponibilidad de vehículo.</p>
-					<p class="text-sm text-neutral-600 dark:text-neutral-400">Movilidad geográfica nacional e internacional.</p>
+                </div>
+                <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Movilidad Geográfica</h3>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Disponibilidad geográfica a nivel nacional e internacional.</p>
                 </div>
             </div>
         </Section>
@@ -74,8 +77,8 @@ import Skill from "@/components/Resume/Skill.astro";
             </div>
         </Section>
 
-        <!-- Experience & Projects -->
-        <Section title="Experiencia & Proyectos" id="experience">
+        <!-- Experiencia Profesional -->
+        <Section title="Experiencia Profesional" id="experience">
             <div class="flex flex-col gap-6">
                 <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
                     <div class="flex justify-between items-center">
@@ -84,7 +87,12 @@ import Skill from "@/components/Resume/Skill.astro";
                     </div>
                     <p class="text-sm text-neutral-600 dark:text-neutral-400">Orquestación de datos y análisis en la nube utilizando Microsoft Fabric. Desarrollo de soluciones low-code y automatización de flujos de trabajo con Power Apps y Power Automate. Participación en procesos de extracción, transformación y carga (ETL) de datos.</p>
                 </div>
+            </div>
+        </Section>
 
+        <!-- Proyectos y Tesis -->
+        <Section title="Proyectos y Tesis" id="projects">
+            <div class="flex flex-col gap-6">
                 <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
                     <div class="flex justify-between items-center">
                         <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">TFM (Máster Big Data, Data Science & IA): Sistema Inteligente de Dynamic Pricing</h3>
@@ -118,28 +126,28 @@ import Skill from "@/components/Resume/Skill.astro";
                 href="#"
                 startDate="2025"
                 endDate="2026"
-                location="Universidad Complutense de Madrid  "
+                location="Universidad Complutense de Madrid"
             />
             <EducationCard
                 title="Máster en Técnicas Cuantitativas en Gestión Empresarial"
                 href="#"
                 startDate="2025"
                 endDate="2026"
-                location="Universidad de Granada  "
+                location="Universidad de Granada"
             />
             <EducationCard
                 title="Bootcamp Data Engineering"
                 href="#"
                 startDate="Sep 2025"
                 endDate="Dic 2025"
-                location="Fundación AI Granada Research & Innovation, T-Systems y Google Cloud  "
+                location="Fundación AI Granada Research & Innovation, T-Systems y Google Cloud"
             />
             <EducationCard
                 title="Grado en Matemáticas"
                 href="#"
                 startDate="2020"
                 endDate="2025"
-                location="Universidad de Granada  "
+                location="Universidad de Granada"
             />
         </Section>
     </div>

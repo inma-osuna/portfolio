@@ -5,8 +5,8 @@ import Section from "@/components/Section.astro";
 
 <Layout
     seo={{
-        title: "Portfolio",
-        description: "Portfolio de Inmaculada Osuna: proyectos, educación y experiencia en datos.",
+        title: "Portfolio | Inmaculada Osuna",
+        description: "Portfolio de Inmaculada Osuna: Data Engineer & Data Scientist.",
     }}
 >
     <div class="flex flex-col gap-16 py-12 antialiased">
@@ -16,7 +16,7 @@ import Section from "@/components/Section.astro";
                 Hola, soy Inmaculada Osuna
             </h1>
             <p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-                Data Engineer, Data Analyst& Data Scientist. Especializada en Big Data, algoritmos de Machine Learning y arquitecturas en la nube. Transformando volúmenes complejos de información en decisiones estratégicas.
+                Data Engineer & Data Scientist. Especializada en Big Data, algoritmos de Machine Learning y arquitecturas en la nube. Transformando volúmenes complejos de información en decisiones estratégicas.
             </p>
             <div class="flex flex-wrap justify-center gap-3">
                 <a
@@ -43,48 +43,38 @@ import Section from "@/components/Section.astro";
                 </div>
                 <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
                     <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Cloud & DevOps</h3>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Microsoft Fabric, Docker, Google Cloud y Azure</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Microsoft Fabric, Snowflake, Docker y Cloud</p>
                 </div>
                 <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
                     <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Modelado & IA</h3>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Machine Learning, Deep RL y PLS-SEM</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Machine Learning, NLP, PLS-SEM y Deep RL</p>
                 </div>
             </div>
         </Section>
 
-        <!-- Work Experience Highlights -->
-        <Section title="Experiencia Destacada">
+        <!-- Experiencia Profesional -->
+        <Section title="Experiencia Profesional">
             <div class="flex flex-col gap-6">
                 <div class="flex flex-col gap-1 border-l-2 border-primary-500 pl-4">
                     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Data Intern</h3>
-                        <span class="text-sm text-neutral-500">Ene 2025 — May 2026</span>
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Prácticas Extracurriculares</h3>
                     </div>
-                    <span class="text-sm text-primary-600 dark:text-primary-400">NTTDATA (Remoto)</span>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Orquestación de datos y procesos ETL en la nube utilizando Microsoft Fabric.</p>
-                </div>
-                
-                <div class="flex flex-col gap-1 border-l-2 border-primary-500 pl-4">
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">TFM: Dynamic Pricing Engine</h3>
-                        <span class="text-sm text-neutral-500">2026</span>
-                    </div>
-                    <span class="text-sm text-primary-600 dark:text-primary-400">UCM, Madrid</span>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Desarrollo de motor de precios dinámicos con Deep Reinforcement Learning para Renfe.</p>
+                    <span class="text-sm text-primary-600 dark:text-primary-400">NTTDATA</span>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Orquestación de datos y procesos ETL en la nube utilizando Microsoft Fabric. Automatización y desarrollo de soluciones low-code.</p>
                 </div>
             </div>
             <div class="mt-4">
-                <a href="/about#experience" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Ver toda la experiencia y educación &rarr;</a>
+                <a href="/about#experience" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Ver trayectoria completa &rarr;</a>
             </div>
         </Section>
 
-        <!-- Proyectos Destacados en la Home -->
-        <Section title="Proyectos Destacados">
+        <!-- Proyectos y Tesis Destacados -->
+        <Section title="Proyectos y Tesis">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between gap-3">
                     <div>
-                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Motor de Precios Dinámicos</h3>
-                        <p class="text-sm text-neutral-600 dark:text-neutral-400">Optimización de capacidad en el transporte interurbano (Renfe) con Deep Reinforcement Learning.</p>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Sistema de Dynamic Pricing</h3>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400">Optimización de capacidad en el transporte interurbano (Renfe) con Deep Reinforcement Learning (TFM UCM).</p>
                     </div>
                     <span class="text-xs font-medium text-primary-600 dark:text-primary-400">PySpark / Streamlit</span>
                 </div>
@@ -92,7 +82,7 @@ import Section from "@/components/Section.astro";
                 <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between gap-3">
                     <div>
                         <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Análisis de Influencers Virtuales</h3>
-                        <p class="text-sm text-neutral-600 dark:text-neutral-400">TFM (Técnicas Cuantitativas UGR): Modelado de ecuaciones estructurales (PLS-SEM) e insights de negocio.</p>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400">Diseño y modelado de ecuaciones estructurales para extraer métricas de negocio (TFM UGR).</p>
                     </div>
                     <span class="text-xs font-medium text-primary-600 dark:text-primary-400">R / PLS-SEM</span>
                 </div>
@@ -100,9 +90,9 @@ import Section from "@/components/Section.astro";
                 <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between gap-3">
                     <div>
                         <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Geometría de la Alhambra</h3>
-                        <p class="text-sm text-neutral-600 dark:text-neutral-400">Modelado matemático de los 17 grupos cristalográficos con 19 vídeos educativos en TikTok.</p>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400">Modelado matemático de los 17 grupos cristalográficos con vídeos educativos (TFG UGR).</p>
                     </div>
-                    <span class="text-xs font-medium text-primary-600 dark:text-primary-400">Matemáticas / TikTok</span>
+                    <span class="text-xs font-medium text-primary-600 dark:text-primary-400">Matemáticas / LaTeX</span>
                 </div>
             </div>
             <div class="mt-4">

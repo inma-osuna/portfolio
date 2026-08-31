@@ -5,8 +5,8 @@ import Section from "@/components/Section.astro";
 
 <Layout
     seo={{
-        title: "Portfolio | Inmaculada Osuna",
-        description: "Portfolio de Inmaculada Osuna: Data Engineer & Data Scientist.",
+        title: "Portfolio",
+        description: "Portfolio de Inmaculada Osuna: proyectos, educación y experiencia en datos.",
     }}
 >
     <div class="flex flex-col gap-16 py-12 antialiased">
@@ -16,7 +16,7 @@ import Section from "@/components/Section.astro";
                 Hola, soy Inmaculada Osuna
             </h1>
             <p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-                Data Engineer & Data Scientist. Especializada en Big Data, algoritmos de Machine Learning y arquitecturas en la nube. Transformando volúmenes complejos de información en decisiones estratégicas.
+                Data Engineer, Data Analyst& Data Scientist. Especializada en Big Data, algoritmos de Machine Learning y arquitecturas en la nube. Transformando volúmenes complejos de información en decisiones estratégicas.
             </p>
             <div class="flex flex-wrap justify-center gap-3">
                 <a
@@ -47,7 +47,7 @@ import Section from "@/components/Section.astro";
                 </div>
                 <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
                     <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Modelado & IA</h3>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Machine Learning, NLP, Deep RL y PLS-SEM</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Machine Learning, Deep RL y PLS-SEM</p>
                 </div>
             </div>
         </Section>
@@ -57,14 +57,24 @@ import Section from "@/components/Section.astro";
             <div class="flex flex-col gap-6">
                 <div class="flex flex-col gap-1 border-l-2 border-primary-500 pl-4">
                     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Prácticas Extracurriculares</h3>
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Data Intern</h3>
+                        <span class="text-sm text-neutral-500">Ene 2025 — May 2026</span>
                     </div>
-                    <span class="text-sm text-primary-600 dark:text-primary-400">NTTDATA</span>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Orquestación de datos y procesos ETL en la nube utilizando Microsoft Fabric. Automatización y desarrollo de soluciones low-code.</p>
+                    <span class="text-sm text-primary-600 dark:text-primary-400">NTTDATA (Remoto)</span>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Orquestación de datos y procesos ETL en la nube utilizando Microsoft Fabric.</p>
+                </div>
+                
+                <div class="flex flex-col gap-1 border-l-2 border-primary-500 pl-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">TFM: Dynamic Pricing Engine</h3>
+                        <span class="text-sm text-neutral-500">2026</span>
+                    </div>
+                    <span class="text-sm text-primary-600 dark:text-primary-400">UCM, Madrid</span>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Desarrollo de motor de precios dinámicos con Deep Reinforcement Learning para Renfe.</p>
                 </div>
             </div>
             <div class="mt-4">
-                <a href="/about#experience" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Ver toda la experiencia y habilidades &rarr;</a>
+                <a href="/about#experience" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Ver toda la experiencia y educación &rarr;</a>
             </div>
         </Section>
 
@@ -73,7 +83,7 @@ import Section from "@/components/Section.astro";
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between gap-3">
                     <div>
-                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Sistema de Dynamic Pricing</h3>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Motor de Precios Dinámicos</h3>
                         <p class="text-sm text-neutral-600 dark:text-neutral-400">Optimización de capacidad en el transporte interurbano (Renfe) con Deep Reinforcement Learning.</p>
                     </div>
                     <span class="text-xs font-medium text-primary-600 dark:text-primary-400">PySpark / Streamlit</span>
@@ -82,7 +92,7 @@ import Section from "@/components/Section.astro";
                 <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between gap-3">
                     <div>
                         <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Análisis de Influencers Virtuales</h3>
-                        <p class="text-sm text-neutral-600 dark:text-neutral-400">Diseño y modelado de ecuaciones estructurales (PLS-SEM) para extraer insights de comportamiento.</p>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400">TFM (Técnicas Cuantitativas UGR): Modelado de ecuaciones estructurales (PLS-SEM) e insights de negocio.</p>
                     </div>
                     <span class="text-xs font-medium text-primary-600 dark:text-primary-400">R / PLS-SEM</span>
                 </div>
@@ -90,9 +100,9 @@ import Section from "@/components/Section.astro";
                 <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between gap-3">
                     <div>
                         <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Geometría de la Alhambra</h3>
-                        <p class="text-sm text-neutral-600 dark:text-neutral-400">Modelado matemático de los 17 grupos cristalográficos con vídeos educativos en TikTok.</p>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400">Modelado matemático de los 17 grupos cristalográficos con 19 vídeos educativos en TikTok.</p>
                     </div>
-                    <span class="text-xs font-medium text-primary-600 dark:text-primary-400">Matemáticas / LaTeX</span>
+                    <span class="text-xs font-medium text-primary-600 dark:text-primary-400">Matemáticas / TikTok</span>
                 </div>
             </div>
             <div class="mt-4">

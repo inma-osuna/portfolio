@@ -2,7 +2,6 @@
 import { Icon } from "astro-icon/components";
 import Layout from "@/layouts/Layout.astro";
 import Section from "@/components/Section.astro";
-import WorkPositionCard from "@/components/Resume/WorkPositionCard.astro";
 import EducationCard from "@/components/Resume/EducationCard.astro";
 import SkillGroup from "@/components/Resume/SkillGroup.astro";
 import Skill from "@/components/Resume/Skill.astro";
@@ -19,10 +18,10 @@ import Skill from "@/components/Resume/Skill.astro";
         <section class="flex flex-col gap-4 max-w-2xl">
             <h1 class="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">Sobre mí</h1>
             <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                Soy graduada en Matemáticas y Máster en Técnicas Cuantitativas por la UGR, con especialización finalizada en Big Data, Data Science e Inteligencia Artificial por la UCM . Combino una sólida base matemática con habilidades avanzadas en ingeniería de datos para resolver problemas de negocio complejos . 
+                Soy graduada en Matemáticas y Máster en Técnicas Cuantitativas por la UGR, con especialización finalizada en Big Data, Data Science e Inteligencia Artificial por la UCM. Combino una sólida base matemática con habilidades avanzadas en ingeniería de datos para resolver problemas de negocio complejos. 
             </p>
             <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                Me apasiona el rigor analítico, la automatización y el desarrollo de sistemas inteligentes que transforman grandes volúmenes de información en decisiones estratégicas . Cuando no estoy programando infraestructuras en la nube o analizando datos, me encontrarás preparándome para mi próxima carrera de 10 kilómetros del 18 de octubre.
+                Me apasiona el rigor analítico, la automatización y el desarrollo de sistemas inteligentes que transforman grandes volúmenes de información en decisiones estratégicas. Cuando no estoy programando infraestructuras en la nube o analizando datos, me encontrarás preparándome para mi próxima carrera de 10 kilómetros del 18 de octubre.
             </p>
         </section>
 
@@ -65,58 +64,44 @@ import Skill from "@/components/Resume/Skill.astro";
             </div>
         </Section>
 
-        <!-- Experience & Projects -->
+        <!-- Experience & Projects (Sin fechas) -->
         <Section title="Experiencia & Proyectos" id="experience">
-            <div class="flex flex-col gap-8">
-                <WorkPositionCard
-                    title="Data Intern (Prácticas Extracurriculares)"
-                    href="#"
-                    startDate="Ene 2025"
-                    endDate="May 2026"
-                    location="NTTDATA (100% Remoto)"
-                    description="Orquestación de datos y análisis en la nube utilizando Microsoft Fabric . Desarrollo de soluciones low-code y automatización de flujos con Power Apps y Power Automate . Participación en procesos ETL de datos . Puesto ejecutado completamente en remoto por falta de espacio físico en la oficina."
-                >
-                    <Icon name="devicon:azure" class="w-7 h-7" />
-                    <Icon name="devicon:microsoftsqlserver" class="w-7 h-7" />
-                </WorkPositionCard>
+            <div class="flex flex-col gap-6">
+                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Data Intern (Prácticas Extracurriculares)</h3>
+                        <span class="text-xs font-medium text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-md">NTTDATA (100% Remoto)</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Orquestación de datos y análisis en la nube utilizando Microsoft Fabric. Desarrollo de soluciones low-code y automatización de flujos con Power Apps y Power Automate. Participación en procesos ETL de datos. Puesto ejecutado completamente en remoto por falta de espacio físico en la oficina.</p>
+                </div>
 
-                <WorkPositionCard
-                    title="Sistema Inteligente de Dynamic Pricing (TFM)"
-                    href="#"
-                    startDate="2026"
-                    endDate="2026"
-                    location="UCM, Madrid"
-                    description="Sistema de Dynamic Pricing y Optimización de Capacidad en el Transporte Interurbano mediante Deep Reinforcement Learning . Aplicado como motor de precios dinámicos para Renfe utilizando PySpark y Streamlit."
-                >
-                    <Icon name="devicon:python" class="w-7 h-7" />
-                    <Icon name="devicon:apachespark" class="w-7 h-7" />
-                </WorkPositionCard>
+                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Sistema Inteligente de Dynamic Pricing (TFM)</h3>
+                        <span class="text-xs font-medium text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-md">UCM, Madrid</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Sistema de Dynamic Pricing y Optimización de Capacidad en el Transporte Interurbano mediante Deep Reinforcement Learning. Aplicado como motor de precios dinámicos para Renfe utilizando PySpark y Streamlit.</p>
+                </div>
 
-                <WorkPositionCard
-                    title="Análisis de Influencers Virtuales (TFM)"
-                    href="#"
-                    startDate="2026"
-                    endDate="2026"
-                    location="UGR, Granada"
-                    description="Análisis del impacto y percepción de los Influencers Virtuales. Diseño del estudio y modelado de ecuaciones estructurales (PLS-SEM) a partir de datos de encuestas para extraer insights de comportamiento y métricas de negocio ."
-                >
-                    <Icon name="devicon:r" class="w-7 h-7" />
-                </WorkPositionCard>
-                
-                <WorkPositionCard
-                    title="Geometría de la Alhambra (TFG)"
-                    href="#"
-                    startDate="2025"
-                    endDate="2025"
-                    location="UGR, Granada"
-                    description="Proyecto de divulgación científica combinando rigor académico y creatividad, centrado en el modelado y análisis de la geometría de los mosaicos de la Alhambra . Análisis de los 17 grupos cristalográficos plasmado en 19 vídeos educativos publicados en TikTok."
-                >
-                    <Icon name="devicon:latex" class="w-7 h-7" />
-                </WorkPositionCard>
+                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Análisis de Influencers Virtuales (TFM)</h3>
+                        <span class="text-xs font-medium text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-md">UGR, Granada</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Análisis del impacto y percepción de los Influencers Virtuales. Diseño del estudio y modelado de ecuaciones estructurales (PLS-SEM) a partir de datos de encuestas para extraer insights de comportamiento y métricas de negocio.</p>
+                </div>
+
+                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Geometría de la Alhambra (TFG)</h3>
+                        <span class="text-xs font-medium text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-md">UGR, Granada</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Proyecto de divulgación científica combinando rigor académico y creatividad, centrado en el modelado y análisis de la geometría de los mosaicos de la Alhambra. Análisis de los 17 grupos cristalográficos plasmado en 19 vídeos educativos publicados en TikTok.</p>
+                </div>
             </div>
         </Section>
 
-        <!-- Education -->
+        <!-- Education (Aquí sí mantenemos las fechas porque queda bien) -->
         <Section title="Educación">
             <EducationCard
                 title="Máster en Ciencia de Datos, Big Data & IA"
@@ -137,7 +122,7 @@ import Skill from "@/components/Resume/Skill.astro";
                 href="#"
                 startDate="2025"
                 endDate="2026"
-                location="Fundación AI Granada, T-Systems y Google Cloud "
+                location="Fundación AI Granada, T-Systems y Google Cloud"
             />
             <EducationCard
                 title="Grado en Matemáticas"

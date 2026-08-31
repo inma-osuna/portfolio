@@ -1,4 +1,4 @@
-# angelhodar.com
+# inmaosuna.com
 
 My personal portfolio and blog built with [Astro](https://astro.build), [Tailwind CSS v4](https://tailwindcss.com), and [MDX](https://mdxjs.com).
 

@@ -4,54 +4,42 @@ import ProjectCard from "@/components/Resume/ProjectCard.astro";
 ---
 
 <Layout
-	seo={{
-		title: "Projects",
-		description: "A collection of my open source projects and side projects",
-	}}
+    seo={{
+        title: "Proyectos",
+        description: "Colección de mis proyectos de datos e investigación",
+    }}
 >
-	<div class="flex flex-col gap-8 py-12">
-		<div class="flex flex-col gap-2">
-			<h1 class="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">Projects</h1>
-			<p class="text-neutral-600 dark:text-neutral-400">A collection of open source projects and experiments.</p>
-		</div>
+    <div class="flex flex-col gap-8 py-12">
+        <div class="flex flex-col gap-2">
+            <h1 class="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">Proyectos</h1>
+            <p class="text-neutral-600 dark:text-neutral-400">Una colección de investigaciones, modelos y arquitecturas de datos.</p>
+        </div>
 
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-			<ProjectCard
-				title="OpenRPG_Inventory"
-				href="https://github.com/angelhodar/OpenRPG_Inventory"
-				description="Generic and fully featured inventory container and equipment system for Unreal Engine 4"
-				tags={["Unreal Engine", "C++", "Blueprints"]}
-			/>
-			<ProjectCard
-				title="MeshOptimizer"
-				href="https://github.com/angelhodar/mesh-optimizer"
-				description="Blender based 3D model optimizer for automatic texture compression and polygon reduction. Docker and serverless ready"
-				tags={["Python", "Blender", "Docker"]}
-			/>
-			<ProjectCard
-				title="NeuroGranada"
-				href="https://github.com/angelhodar/neuro-exercises"
-				description="A neurological rehabilitation platform with AI-powered cognitive exercises, speech recognition, and media management"
-				tags={["TypeScript", "Next.js", "AI SDK"]}
-			/>
-			<ProjectCard
-				title="OpenRPG_Stats"
-				href="https://github.com/angelhodar/OpenRPG_Stats"
-				description="Attributes and stats system for Unreal Engine 4"
-				tags={["Unreal Engine", "C++", "Blueprints"]}
-			/>
-			<ProjectCard
-				title="OpenRPG_Quest"
-				href="https://github.com/angelhodar/OpenRPG_Quest"
-				description="Multipurpose quest system for Unreal Engine 4"
-				tags={["Unreal Engine", "C++", "Blueprints"]}
-			/>
-			<ProjectCard
-				title="angelhodar.com"
-				href="https://github.com/angelhodar/angelhodar.com"
-				description="My personal portfolio using the Astro framework"
-				tags={["Astro", "TypeScript", "Tailwind"]}
-			/>
-		</div>
-	</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ProjectCard
+                title="Dynamic Pricing Engine"
+                href="#"
+                description="Sistema Inteligente de Dynamic Pricing y Optimización de Capacidad en el Transporte Interurbano mediante Deep Reinforcement Learning."
+                tags={["Python", "PySpark", "Streamlit"]}
+            />
+           <ProjectCard
+                title="Grupos Cristalográficos Alhambra"
+                href="https://www.tiktok.com/@inmaosm?is_from_webapp=1&sender_device=pc"
+                description="Proyecto de divulgación científica centrado en el modelado y análisis matemático de los 17 grupos cristalográficos. (19 vídeos publicados en TikTok)."
+                tags={["Matemáticas", "TikTok", "Divulgación"]}
+            />
+            <ProjectCard
+                title="Influencers Virtuales"
+                href="#"
+                description="Análisis del impacto y percepción mediante diseño de estudio y modelado de ecuaciones estructurales (PLS-SEM)."
+                tags={["R", "PLS-SEM", "Análisis de Datos"]}
+            />
+            <ProjectCard
+                title="inma-osuna.com"
+                href="https://github.com/tu-usuario/portfolio"
+                description="Mi portafolio personal construido de forma minimalista para presentar mis proyectos y trayectoria."
+                tags={["Astro", "TypeScript", "Tailwind"]}
+            />
+        </div>
+    </div>
 </Layout>

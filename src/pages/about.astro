@@ -9,191 +9,131 @@ import Skill from "@/components/Resume/Skill.astro";
 ---
 
 <Layout
-	seo={{
-		title: "About",
-		description: "About Angel Hodar — background, skills, and experience",
-	}}
+    seo={{
+        title: "Sobre mí",
+        description: "Sobre Inmaculada Osuna — formación, habilidades y experiencia",
+    }}
 >
-	<div class="flex flex-col gap-16 py-12">
-		<!-- Introduction -->
-		<section class="flex flex-col gap-4 max-w-2xl">
-			<h1 class="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">About me</h1>
-			<p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-				I'm a Full Stack Developer from Granada, Spain, with a passion for building clean, performant web applications. With a background in Computer Science and experience ranging from VR development to cloud-based SaaS platforms, I enjoy tackling challenges across the entire tech stack.
-			</p>
-			<p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-				I'm driven by a love for well-crafted software — whether it's optimizing database queries, designing intuitive UIs, or architecting scalable systems. When I'm not coding, you'll find me exploring new technologies and <a href="/projects" class="text-blue-600 dark:text-blue-400 hover:underline">contributing to open source</a>.
-			</p>
-		</section>
+    <div class="flex flex-col gap-16 py-12">
+        <!-- Introduction -->
+        <section class="flex flex-col gap-4 max-w-2xl">
+            <h1 class="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">Sobre mí</h1>
+            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                Soy graduada en Matemáticas y Máster en Técnicas Cuantitativas por la UGR. Combino una sólida base matemática con habilidades avanzadas en ingeniería de datos para resolver problemas de negocio complejos. 
+            </p>
+            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                Me apasiona el rigor analítico, la automatización y el desarrollo de sistemas inteligentes que transforman grandes volúmenes de información en soluciones reales. Cuando no estoy programando infraestructuras en la nube o entrenando modelos, me encontrarás preparándome para mi próxima carrera de 10 kilómetros del 18 de octubre.
+            </p>
+        </section>
 
-		<!-- Skills -->
-		<Section title="Skills">
-			<div class="flex flex-col gap-6">
-				<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-					<SkillGroup name="Frontend">
-						<Skill icon="devicon:typescript" name="TypeScript" />
-						<Skill icon="devicon:react" name="React" />
-						<Skill icon="devicon:vuejs" name="Vue" />
-						<Skill icon="devicon:tailwindcss" name="Tailwind" />
-						<Skill icon="devicon:nextjs" name="NextJS" />
-						<Skill icon="devicon:nuxtjs" name="Nuxt" />
-						<Skill
-							icon="devicon:astro"
-							name="Astro"
-							class="fill-black dark:fill-white"
-						/>
-					</SkillGroup>
+        <!-- Skills -->
+        <Section title="Habilidades">
+            <div class="flex flex-col gap-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <SkillGroup name="Lenguajes">
+                        <Skill icon="devicon:python" name="Python" />
+                        <Skill icon="devicon:r" name="R" />
+                        <Skill icon="devicon:cplusplus" name="C++" />
+                        <Skill icon="devicon:latex" name="LaTeX" />
+                    </SkillGroup>
 
-					<SkillGroup name="Backend">
-						<Skill icon="devicon:nodejs" name="Node" />
-						<Skill icon="devicon:nestjs" name="NestJS" />
-						<Skill icon="devicon:python" name="Python" />
-						<Skill icon="devicon:cplusplus" name="C++" />
-						<Skill icon="devicon:csharp" name="C#" />
-						<Skill icon="graphql" name="GraphQL" />
-						<Skill icon="devicon:docker" name="Docker" />
-					</SkillGroup>
-				</div>
+                    <SkillGroup name="Bases de Datos">
+                        <Skill icon="devicon:postgresql" name="SQL / PostgreSQL" />
+                        <Skill icon="devicon:mongodb" name="MongoDB" />
+                    </SkillGroup>
+                </div>
 
-				<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-					<SkillGroup name="Cloud">
-						<Skill icon="aws" name="AWS" />
-						<Skill icon="devicon:digitalocean" name="DigitalOcean" />
-						<Skill
-							icon="devicon:vercel"
-							name="Vercel"
-							class="fill-black dark:fill-white"
-						/>
-						<Skill icon="devicon:firebase" name="Firebase" />
-						<Skill icon="devicon:supabase" name="Supabase" />
-					</SkillGroup>
-					<SkillGroup name="Databases">
-						<Skill icon="devicon:postgresql" name="Postgres" />
-						<div class="flex flex-col items-center gap-2">
-							<Icon name="timescaledb-light" class="w-10 h-10 block dark:hidden" />
-							<Icon name="timescaledb" class="w-10 h-10 hidden dark:block" />
-							<span class="text-xs text-neutral-600 dark:text-neutral-400">TimescaleDB</span>
-						</div>
-						<Skill icon="devicon:mongodb" name="MongoDB" />
-					</SkillGroup>
-				</div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <SkillGroup name="Ingeniería & Cloud">
+                        <Skill icon="devicon:apachespark" name="PySpark / Hadoop" />
+                        <Skill icon="devicon:googlecloud" name="Google Cloud" />
+                        <Skill icon="devicon:azure" name="Azure" />
+                        <Skill icon="devicon:docker" name="Docker" />
+                    </SkillGroup>
+                    
+                    <SkillGroup name="Ciencia de Datos & IA">
+                        <Skill icon="devicon:tensorflow" name="Machine Learning" />
+                        <Skill icon="devicon:pytorch" name="Deep Learning" />
+                        <div class="flex flex-col items-center gap-2">
+                            <span class="text-xs text-neutral-600 dark:text-neutral-400 font-medium">PLS-SEM</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <span class="text-xs text-neutral-600 dark:text-neutral-400 font-medium">NLP</span>
+                        </div>
+                    </SkillGroup>
+                </div>
+            </div>
+        </Section>
 
-				<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-					<SkillGroup name="Game Engines">
-						<Skill
-							icon="devicon:unity"
-							name="Unity"
-							class="fill-black dark:fill-white"
-						/>
-						<Skill
-							icon="devicon:unrealengine"
-							name="Unreal Engine"
-							class="fill-black dark:fill-white"
-						/>
-					</SkillGroup>
-					<SkillGroup name="Testing">
-						<Skill icon="devicon:vitest" name="Vitest" />
-						<Skill icon="devicon:playwright" name="Playwright" />
-					</SkillGroup>
-					<SkillGroup name="AI">
-						<Skill icon="cursor" name="Cursor" />
-						<Skill icon="claude" name="Claude" />
-						<Skill icon="mcp" name="MCP" />
-					</SkillGroup>
-				</div>
-			</div>
-		</Section>
+        <!-- Experience -->
+        <Section title="Experiencia & Proyectos" id="experience">
+            <div class="flex flex-col gap-8">
+                <WorkPositionCard
+                    title="Data Intern (Prácticas Extracurriculares)"
+                    href="#"
+                    startDate="Enero 2025"
+                    endDate="Mayo 2026"
+                    location="NTTDATA (100% Remoto)"
+                    description="Orquestación de datos y análisis en la nube utilizando Microsoft Fabric. Desarrollo de soluciones low-code y automatización de flujos con Power Apps y Power Automate. Participación en procesos ETL de datos. Puesto ejecutado completamente en remoto por falta de espacio físico en la oficina."
+                >
+                    <Icon name="devicon:azure" class="w-7 h-7" />
+                    <Icon name="devicon:microsoftsqlserver" class="w-7 h-7" />
+                </WorkPositionCard>
 
-		<!-- Experience -->
-		<Section title="Experience" id="experience">
-			<div class="flex flex-col gap-8">
-				<WorkPositionCard
-					title="Full Stack Developer"
-					href="https://dehn.de/"
-					startDate="July 2025"
-					location="DEHN Digital Solutions"
-					description="I joined DDS to develop a new IoT platform solution for customers to be able to monitor data produced by devices to alert and protect electrical installations, from the database optimization to store huge amounts of time series data to design frontend interfaces for data visualization"
-				>
-					<Icon name="devicon:vuejs" class="w-7 h-7" />
-					<Icon name="devicon:nestjs" class="w-7 h-7" />
-					<Icon name="devicon:nodejs" class="w-7 h-7" />
-					<Icon name="devicon:typescript" class="w-7 h-7" />
-					<Icon name="aws" class="w-7 h-7" />
-					<Icon name="devicon:postgresql" class="w-7 h-7" />
-					<Icon name="timescaledb-light" class="w-7 h-7 block dark:hidden" />
-				<Icon name="timescaledb" class="w-7 h-7 hidden dark:block" />
-					<Icon name="devicon:docker" class="w-7 h-7" />
-					<Icon name="devicon:tailwindcss" class="w-7 h-7" />
-				</WorkPositionCard>
+                <WorkPositionCard
+                    title="Sistema Inteligente de Dynamic Pricing (TFM)"
+                    href="#"
+                    startDate="2026"
+                    location="UCM, Madrid"
+                    description="Sistema de Dynamic Pricing y Optimización de Capacidad en el Transporte Interurbano mediante Deep Reinforcement Learning. Aplicado como motor de precios dinámicos utilizando PySpark y Streamlit."
+                >
+                    <Icon name="devicon:python" class="w-7 h-7" />
+                    <Icon name="devicon:apachespark" class="w-7 h-7" />
+                </WorkPositionCard>
 
-				<WorkPositionCard
-					title="Full Stack Leader"
-					href="https://fuelyourbrands.com/"
-					startDate="June 2022"
-					endDate="June 2025"
-					location="Fuel Your Brands, Madrid"
-					description="At Fuel I took the development leadership of their product, a platform to connect brands with microinfluencers in social networks. I developed new features across the entire tech stack, internal tools to boost productivity and cost optimization in all the services"
-				>
-					<Icon name="devicon:nextjs" class="w-7 h-7" />
-					<Icon name="graphql" class="w-7 h-7" />
-					<Icon name="devicon:nodejs" class="w-7 h-7" />
-					<Icon name="devicon:typescript" class="w-7 h-7" />
-					<Icon name="aws" class="w-7 h-7" />
-					<Icon name="devicon:mongodb" class="w-7 h-7" />
-					<Icon name="devicon:docker" class="w-7 h-7" />
-					<Icon
-						name="devicon:vercel"
-						class="w-7 h-7 fill-black dark:fill-white"
-					/>
-					<Icon name="devicon:tailwindcss" class="w-7 h-7" />
-				</WorkPositionCard>
+                <WorkPositionCard
+                    title="Geometría de la Alhambra (TFG)"
+                    href="https://www.tiktok.com/@inmaosm?is_from_webapp=1&sender_device=pc"
+                    startDate="Dic 2025"
+                    location="UGR, Granada"
+                    description="Proyecto de divulgación científica combinando rigor académico y creatividad, centrado en el modelado y análisis de la geometría de los mosaicos de la Alhambra. Análisis de los 17 grupos cristalográficos plasmado en 19 vídeos educativos publicados en TikTok."
+                >
+                    <Icon name="devicon:r" class="w-7 h-7" />
+                </WorkPositionCard>
+                
+            </div>
+        </Section>
 
-				<WorkPositionCard
-					title="Software Engineer"
-					href="https://www.fidesol.org/"
-					startDate="May 2020"
-					endDate="June 2022"
-					location="Fidesol, Granada"
-					description="Worked as VR programmer creating experiences with the Unity game engine. I also developed the platform where the VR devices connected to, using React and NodeJS"
-				>
-					<Icon name="devicon:react" class="w-7 h-7" />
-					<Icon name="devicon:javascript" class="w-7 h-7" />
-					<Icon name="devicon:nodejs" class="w-7 h-7" />
-					<Icon name="devicon:csharp" class="w-7 h-7" />
-					<Icon
-						name="devicon:unity"
-						class="w-7 h-7 fill-black dark:fill-white"
-					/>
-					<Icon name="devicon:docker" class="w-7 h-7" />
-					<Icon name="devicon:mongodb" class="w-7 h-7" />
-				</WorkPositionCard>
-
-				<WorkPositionCard
-					title="Software Engineer Intern"
-					href="https://www.fidesol.org/"
-					startDate="Feb 2020"
-					endDate="May 2020"
-					location="Fidesol, Granada"
-					description="In my internship I helped in the development of virtual reality experiences for clients, preparing new assets to use, including the interaction code, on-demand delivery and the improvements of the internal tools used to develop the experiences."
-				>
-					<Icon name="devicon:csharp" class="w-7 h-7" />
-					<Icon
-						name="devicon:unity"
-						class="w-7 h-7 fill-black dark:fill-white"
-					/>
-				</WorkPositionCard>
-			</div>
-		</Section>
-
-		<!-- Education -->
-		<Section title="Education">
-			<EducationCard
-				title="Computer Science Bachelor"
-				href="https://etsiit.ugr.es/"
-				startDate="Sep 2016"
-				endDate="Jun 2020"
-				location="ETSIIT, University of Granada"
-			/>
-		</Section>
-	</div>
+       <!-- Education -->
+        <Section title="Educación">
+            <EducationCard
+                title="Máster en Ciencia de Datos, Big Data & IA"
+                href="#"
+                startDate="Sep 2025"
+                endDate="Sep 2026"
+                location="Universidad Complutense de Madrid"
+            />
+            <EducationCard
+                title="Máster en Técnicas Cuantitativas en Gestión Empresarial"
+                href="#"
+                startDate="Sep 2025"
+                endDate="Jul 2026"
+                location="Universidad de Granada"
+            />
+            <EducationCard
+                title="Bootcamp Data Engineering"
+                href="#"
+                startDate="2025"
+                endDate="2026"
+                location="Fundación AI Granada, T-Systems y Google Cloud"
+            />
+            <EducationCard
+                title="Grado en Matemáticas"
+                href="#"
+                startDate="Sep 2020"
+                endDate="Dic 2025"
+                location="Universidad de Granada"
+            />
+        </Section>
+    </div>
 </Layout>

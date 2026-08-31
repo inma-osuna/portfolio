@@ -15,88 +15,73 @@ const posts: CollectionEntry<"blog">[] = (await getCollection("blog"))
 ---
 
 <Layout
-	seo={{
-		title: "Portfolio",
-		description:
-			"My portfolio with projects, education and work over the years",
-	}}
+    seo={{
+        title: "Portfolio",
+        description: "Portfolio de Inmaculada Osuna: proyectos, educación y experiencia en datos.",
+    }}
 >
-	<div class="flex flex-col gap-20 py-12 antialiased">
-		<!-- Hero Section -->
-		<section class="flex flex-col items-center text-center gap-6">
-			<h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-100">
-				Hey, I'm Ángel Hodar
-			</h1>
-			<p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-				Full Stack Developer building modern web applications. I specialize in TypeScript, React and cloud infrastructure — turning ideas into polished, production-ready products.
-			</p>
-			<div class="flex flex-wrap justify-center gap-3">
-				<a
-					href="/projects"
-					class="inline-flex items-center px-5 py-2.5 rounded-lg bg-primary-600 text-white text-sm font-medium hover:bg-primary-700 transition-colors"
-				>
-					View Projects
-				</a>
-				<a
-					href="mailto:angelhodar76@gmail.com"
-					class="inline-flex items-center px-5 py-2.5 rounded-lg border border-neutral-300 dark:border-neutral-700 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
-				>
-					Contact me
-				</a>
-			</div>
-		</section>
+    <div class="flex flex-col gap-20 py-12 antialiased">
+        <!-- Hero Section -->
+        <section class="flex flex-col items-center text-center gap-6">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-100">
+                Hola, soy Inmaculada Osuna Muñoz
+            </h1>
+            <p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+                Data Engineer & Data Scientist. Especializada en Big Data, algoritmos de Machine Learning y arquitecturas en la nube. Transformando volúmenes complejos de información en decisiones estratégicas.
+            </p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <a
+                    href="/projects"
+                    class="inline-flex items-center px-5 py-2.5 rounded-lg bg-primary-600 text-white text-sm font-medium hover:bg-primary-700 transition-colors"
+                >
+                    Ver Proyectos
+                </a>
+                <a
+                    href="mailto:inmamuba@gmail.com"
+                    class="inline-flex items-center px-5 py-2.5 rounded-lg border border-neutral-300 dark:border-neutral-700 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+                >
+                    Contactar
+                </a>
+            </div>
+        </section>
 
-		<!-- Work Experience Highlights -->
-		<Section title="Experience">
-			<div class="flex flex-col gap-6">
-				<div class="flex flex-col gap-1 border-l-2 border-primary-500 pl-4">
-					<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-						<h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Full Stack Developer</h3>
-						<span class="text-sm text-neutral-500">July 2025 — Present</span>
-					</div>
-					<a href="https://dehn.de/" target="_blank" rel="noopener noreferrer" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">DEHN Digital Solutions</a>
-					<p class="text-sm text-neutral-600 dark:text-neutral-400">Developing an IoT platform for monitoring electrical installations with real-time data visualization</p>
-				</div>
-				<div class="flex flex-col gap-1 border-l-2 border-primary-500 pl-4">
-					<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-						<h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Full Stack Leader</h3>
-						<span class="text-sm text-neutral-500">June 2022 — June 2025</span>
-					</div>
-					<a href="https://fuelyourbrands.com/" target="_blank" rel="noopener noreferrer" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">Fuel Your Brands, Madrid</a>
-					<p class="text-sm text-neutral-600 dark:text-neutral-400">Led development of a platform connecting brands with microinfluencers across the full tech stack</p>
-				</div>
-				<div class="flex flex-col gap-1 border-l-2 border-primary-500 pl-4">
-					<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-						<h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Software Engineer</h3>
-						<span class="text-sm text-neutral-500">May 2020 — June 2022</span>
-					</div>
-					<a href="https://www.fidesol.org/" target="_blank" rel="noopener noreferrer" class="text-sm text-primary-600 dark:text-primary-400 hover:underline">Fidesol, Granada</a>
-					<p class="text-sm text-neutral-600 dark:text-neutral-400">Built VR experiences with Unity and web platforms with React and Node.js</p>
-				</div>
-			</div>
-			<a href="/about#experience" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">View all experience &rarr;</a>
-		</Section>
+        <!-- Work Experience Highlights -->
+        <Section title="Experiencia Destacada">
+            <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-1 border-l-2 border-primary-500 pl-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Data Intern</h3>
+                        <span class="text-sm text-neutral-500">Ene 2025 — May 2026</span>
+                    </div>
+                    <span class="text-sm text-primary-600 dark:text-primary-400">NTTDATA (Remoto)</span>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Orquestación de datos y procesos ETL en la nube utilizando Microsoft Fabric.</p>
+                </div>
+                
+            
+            </div>
+            <a href="/about#experience" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Ver toda la experiencia &rarr;</a>
+        </Section>
 
-		<!-- Blog Highlights -->
-		<Section title="Latest Articles">
-			<div class="flex flex-col gap-10">
-				{posts.map((post) => (
-					<article class="flex flex-col gap-2">
-						<span class="text-sm text-neutral-500">{formatDate(post.data.publishedAt)}</span>
-						<a href={"/blog/" + post.id} class="hover:underline">
-							<h3 class="text-xl font-bold text-neutral-900 dark:text-neutral-100">
-								{post.data.title}
-							</h3>
-						</a>
-						{post.data.description && (
-							<p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-								{post.data.description}
-							</p>
-						)}
-					</article>
-				))}
-			</div>
-			<a href="/blog" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">View all posts &rarr;</a>
-		</Section>
-	</div>
+        <!-- Blog Highlights -->
+        <Section title="Últimos Artículos">
+            <div class="flex flex-col gap-10">
+                {posts.map((post) => (
+                    <article class="flex flex-col gap-2">
+                        <span class="text-sm text-neutral-500">{formatDate(post.data.publishedAt)}</span>
+                        <a href={"/blog/" + post.id} class="hover:underline">
+                            <h3 class="text-xl font-bold text-neutral-900 dark:text-neutral-100">
+                                {post.data.title}
+                            </h3>
+                        </a>
+                        {post.data.description && (
+                            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                                {post.data.description}
+                            </p>
+                        )}
+                    </article>
+                ))}
+            </div>
+            <a href="/blog" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Ver todos los artículos &rarr;</a>
+        </Section>
+    </div>
 </Layout>

@@ -18,48 +18,57 @@ import Skill from "@/components/Resume/Skill.astro";
         <section class="flex flex-col gap-4 max-w-2xl">
             <h1 class="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">Sobre mí</h1>
             <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                Soy graduada en Matemáticas y Máster en Técnicas Cuantitativas por la UGR, con especialización finalizada en Big Data, Data Science e Inteligencia Artificial por la UCM. Combino una sólida base matemática con habilidades avanzadas en ingeniería de datos para resolver problemas de negocio complejos. 
+                Graduada en Matemáticas y Máster en Técnicas Cuantitativas (UGR), con especialización finalizada en Big Data, Data Science & Inteligencia Artificial (UCM)[cite: 1]. Combino una sólida base matemática con habilidades avanzadas en ingeniería de datos para resolver problemas de negocio complejos[cite: 1].
             </p>
             <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                Me apasiona el rigor analítico, la automatización y el desarrollo de sistemas inteligentes que transforman grandes volúmenes de información en decisiones estratégicas. Cuando no estoy programando infraestructuras en la nube o analizando datos, me encontrarás preparándome para mi próxima carrera de 10 kilómetros del 18 de octubre.
+                Apasionada por el rigor analítico, la automatización y el desarrollo de sistemas inteligentes que transforman grandes volúmenes de información en soluciones reales y toma de decisiones estratégicas[cite: 1]. Cuando no estoy programando o analizando datos, me encontrarás preparándome para mi próxima carrera de 10 kilómetros del 18 de octubre.
             </p>
         </section>
 
+        <!-- Languages & Info -->
+        <Section title="Idiomas & Información">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Idiomas</h3>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Español: Nativo[cite: 1]<br>Inglés: Nivel C1[cite: 1]</p>
+                </div>
+                <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Información Adicional</h3>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Permiso de conducir tipo B, disponibilidad de vehículo y movilidad geográfica nacional e internacional[cite: 1].</p>
+                </div>
+            </div>
+        </Section>
+
         <!-- Skills -->
-        <Section title="Habilidades">
+        <Section title="Competencias Técnicas">
             <div class="flex flex-col gap-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <SkillGroup name="Lenguajes">
-                        <Skill icon="devicon:python" name="Python" />
-                        <Skill icon="devicon:r" name="R" />
-                        <Skill icon="devicon:cplusplus" name="C++" />
-                        <Skill icon="devicon:latex" name="LaTeX" />
-                    </SkillGroup>
+                    <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-3">
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100">Ingeniería de Datos e Infraestructura</h3>
+                        <ul class="text-sm text-neutral-600 dark:text-neutral-400 space-y-1.5 list-disc list-inside">
+                            <li><strong>Procesamiento:</strong> Ecosistema Hadoop/Spark, Microsoft Fabric (Lakehouse) y flujos ETL/ELT[cite: 1].</li>
+                            <li><strong>Cloud & Warehousing:</strong> Snowflake (Platform Skills Badge), Azure y Google Cloud[cite: 1].</li>
+                            <li><strong>Bases de Datos:</strong> SQL (PostgreSQL, SQL Server) y NoSQL (MongoDB)[cite: 1].</li>
+                            <li><strong>DevOps:</strong> Contenerización con Docker[cite: 1].</li>
+                        </ul>
+                    </div>
 
-                    <SkillGroup name="Bases de Datos">
-                        <Skill icon="devicon:postgresql" name="SQL / PostgreSQL" />
-                        <Skill icon="devicon:mongodb" name="MongoDB" />
-                    </SkillGroup>
+                    <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-3">
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100">Ciencia de Datos y Modelado Avanzado</h3>
+                        <ul class="text-sm text-neutral-600 dark:text-neutral-400 space-y-1.5 list-disc list-inside">
+                            <li><strong>Machine & Deep Learning:</strong> Modelos supervisados/no supervisados, redes neuronales y NLP[cite: 1].</li>
+                            <li><strong>Técnicas Cuantitativas:</strong> Modelización econométrica, series temporales y estadística multivariante[cite: 1].</li>
+                            <li><strong>Optimización:</strong> Programación lineal y entera aplicada a la gestión de recursos[cite: 1].</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <SkillGroup name="Ingeniería & Cloud">
-                        <Skill icon="devicon:apachespark" name="PySpark / Hadoop" />
-                        <Skill icon="devicon:googlecloud" name="Google Cloud" />
-                        <Skill icon="devicon:azure" name="Azure" />
-                        <Skill icon="devicon:docker" name="Docker" />
-                    </SkillGroup>
-                    
-                    <SkillGroup name="Ciencia de Datos & IA">
-                        <Skill icon="devicon:tensorflow" name="Machine Learning" />
-                        <Skill icon="devicon:pytorch" name="Deep Learning" />
-                        <div class="flex flex-col items-center gap-2">
-                            <span class="text-xs text-neutral-600 dark:text-neutral-400 font-medium">PLS-SEM</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-2">
-                            <span class="text-xs text-neutral-600 dark:text-neutral-400 font-medium">NLP</span>
-                        </div>
-                    </SkillGroup>
+                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-3">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100">Visualización, Herramientas & Software</h3>
+                    <ul class="text-sm text-neutral-600 dark:text-neutral-400 space-y-1.5 list-disc list-inside">
+                        <li><strong>Business Intelligence:</strong> Dashboards interactivos, Power Apps y Power Automate[cite: 1].</li>
+                        <li><strong>Software Especializado:</strong> Python (Scikit-learn, Pandas), R (Tidyverse), Stata, SPSS y redacción técnica en LaTeX[cite: 1].</li>
+                    </ul>
                 </div>
             </div>
         </Section>
@@ -69,34 +78,34 @@ import Skill from "@/components/Resume/Skill.astro";
             <div class="flex flex-col gap-6">
                 <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
                     <div class="flex justify-between items-center">
-                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Data Intern (Prácticas Extracurriculares)</h3>
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Prácticas Extracurriculares: NTTDATA</h3>
                         <span class="text-xs font-medium text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-md">NTTDATA</span>
                     </div>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Orquestación de datos y análisis en la nube utilizando Microsoft Fabric. Desarrollo de soluciones low-code y automatización de flujos con Power Apps y Power Automate. Participación en procesos ETL de datos.</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Orquestación de datos y análisis en la nube utilizando Microsoft Fabric[cite: 1]. Desarrollo de soluciones low-code y automatización de flujos de trabajo con Power Apps y Power Automate[cite: 1]. Participación en procesos de extracción, transformación y carga (ETL) de datos[cite: 1].</p>
                 </div>
 
                 <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
                     <div class="flex justify-between items-center">
-                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Sistema Inteligente de Dynamic Pricing (TFM)</h3>
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">TFM (Máster Big Data, Data Science & IA): Sistema Inteligente de Dynamic Pricing</h3>
                         <span class="text-xs font-medium text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-md">UCM, Madrid</span>
                     </div>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Sistema de Dynamic Pricing y Optimización de Capacidad en el Transporte Interurbano mediante Deep Reinforcement Learning. Aplicado como motor de precios dinámicos para Renfe utilizando PySpark y Streamlit.</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Sistema Inteligente de Dynamic Pricing y Optimización de Capacidad en el Transporte Interurbano mediante Deep Reinforcement Learning[cite: 1].</p>
                 </div>
 
                 <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
                     <div class="flex justify-between items-center">
-                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Análisis de Influencers Virtuales (TFM)</h3>
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">TFM (Máster Técnicas Cuantitativas): Análisis de Influencers Virtuales</h3>
                         <span class="text-xs font-medium text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-md">UGR, Granada</span>
                     </div>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Análisis del impacto y percepción de los Influencers Virtuales. Diseño del estudio y modelado de ecuaciones estructurales (PLS-SEM) a partir de datos de encuestas para extraer insights de comportamiento y métricas de negocio.</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Análisis del impacto y percepción de los Influencers Virtuales[cite: 1]. Diseño del estudio y modelado de ecuaciones estructurales (PLS-SEM) a partir de datos de encuestas para extraer insights de comportamiento y métricas de negocio[cite: 1].</p>
                 </div>
 
                 <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex flex-col gap-2">
                     <div class="flex justify-between items-center">
-                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Geometría de la Alhambra (TFG)</h3>
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">TFG (Grado en Matemáticas): Geometría de la Alhambra</h3>
                         <span class="text-xs font-medium text-neutral-500 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-md">UGR, Granada</span>
                     </div>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Proyecto de divulgación científica combinando rigor académico y creatividad, centrado en el modelado y análisis de la geometría de los mosaicos de la Alhambra. Análisis de los 17 grupos cristalográficos plasmado en 19 vídeos educativos publicados en TikTok.</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Proyecto de divulgación científica combinando rigor académico y creatividad, centrado en el modelado y análisis de la geometría de los mosaicos de la Alhambra[cite: 1].</p>
                 </div>
             </div>
         </Section>
@@ -106,30 +115,30 @@ import Skill from "@/components/Resume/Skill.astro";
             <EducationCard
                 title="Máster en Ciencia de Datos, Big Data & IA"
                 href="#"
-                startDate="Sep 2025"
-                endDate="Sep 2026"
-                location="Universidad Complutense de Madrid"
+                startDate="2025"
+                endDate="2026"
+                location="Universidad Complutense de Madrid[cite: 1]"
             />
             <EducationCard
                 title="Máster en Técnicas Cuantitativas en Gestión Empresarial"
                 href="#"
-                startDate="Sep 2025"
-                endDate="Jul 2026"
-                location="Universidad de Granada"
+                startDate="2025"
+                endDate="2026"
+                location="Universidad de Granada[cite: 1]"
             />
             <EducationCard
                 title="Bootcamp Data Engineering"
                 href="#"
                 startDate="Sep 2025"
                 endDate="Dic 2025"
-                location="Fundación AI Granada, T-Systems y Google Cloud"
+                location="Fundación AI Granada Research & Innovation, T-Systems y Google Cloud[cite: 1]"
             />
             <EducationCard
                 title="Grado en Matemáticas"
                 href="#"
-                startDate="Sep 2020"
-                endDate="Dic 2025"
-                location="Universidad de Granada"
+                startDate="2020"
+                endDate="2025"
+                location="Universidad de Granada[cite: 1]"
             />
         </Section>
     </div>

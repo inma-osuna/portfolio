@@ -1,17 +1,6 @@
 ---
-import { getCollection } from "astro:content";
-import type { CollectionEntry } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import Section from "@/components/Section.astro";
-import { formatDate } from "@/utils";
-
-const posts: CollectionEntry<"blog">[] = (await getCollection("blog"))
-  .filter((post) => !post.data.draft)
-  .sort(
-    (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
-      b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf(),
-  )
-  .slice(0, 3);
 ---
 
 <Layout
@@ -20,11 +9,11 @@ const posts: CollectionEntry<"blog">[] = (await getCollection("blog"))
         description: "Portfolio de Inmaculada Osuna: proyectos, educación y experiencia en datos.",
     }}
 >
-    <div class="flex flex-col gap-20 py-12 antialiased">
+    <div class="flex flex-col gap-16 py-12 antialiased">
         <!-- Hero Section -->
         <section class="flex flex-col items-center text-center gap-6">
             <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-100">
-                Hola, soy Inmaculada Osuna Muñoz
+                Hola, soy Inmaculada Osuna
             </h1>
             <p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
                 Data Engineer & Data Scientist. Especializada en Big Data, algoritmos de Machine Learning y arquitecturas en la nube. Transformando volúmenes complejos de información en decisiones estratégicas.
@@ -45,6 +34,24 @@ const posts: CollectionEntry<"blog">[] = (await getCollection("blog"))
             </div>
         </section>
 
+        <!-- Resumen de Habilidades Clave -->
+        <Section title="Competencias Destacadas">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Lenguajes & Datos</h3>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Python, R, SQL, PySpark y C++</p>
+                </div>
+                <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Cloud & DevOps</h3>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Microsoft Fabric, Docker, Google Cloud y Azure</p>
+                </div>
+                <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Modelado & IA</h3>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Machine Learning, Deep RL y PLS-SEM</p>
+                </div>
+            </div>
+        </Section>
+
         <!-- Work Experience Highlights -->
         <Section title="Experiencia Destacada">
             <div class="flex flex-col gap-6">
@@ -57,11 +64,50 @@ const posts: CollectionEntry<"blog">[] = (await getCollection("blog"))
                     <p class="text-sm text-neutral-600 dark:text-neutral-400">Orquestación de datos y procesos ETL en la nube utilizando Microsoft Fabric.</p>
                 </div>
                 
-            
+                <div class="flex flex-col gap-1 border-l-2 border-primary-500 pl-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">TFM: Dynamic Pricing Engine</h3>
+                        <span class="text-sm text-neutral-500">2026</span>
+                    </div>
+                    <span class="text-sm text-primary-600 dark:text-primary-400">UCM, Madrid</span>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Desarrollo de motor de precios dinámicos con Deep Reinforcement Learning para Renfe.</p>
+                </div>
             </div>
-            <a href="/about#experience" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Ver toda la experiencia &rarr;</a>
+            <div class="mt-4">
+                <a href="/about#experience" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Ver toda la experiencia y educación &rarr;</a>
+            </div>
         </Section>
 
-        
+        <!-- Proyectos Destacados en la Home -->
+        <Section title="Proyectos Destacados">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between gap-3">
+                    <div>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Motor de Precios Dinámicos</h3>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400">Optimización de capacidad en el transporte interurbano (Renfe) con Deep Reinforcement Learning.</p>
+                    </div>
+                    <span class="text-xs font-medium text-primary-600 dark:text-primary-400">PySpark / Streamlit</span>
+                </div>
+                
+                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between gap-3">
+                    <div>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Análisis de Influencers Virtuales</h3>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400">TFM (Técnicas Cuantitativas UGR): Modelado de ecuaciones estructurales (PLS-SEM) e insights de negocio[cite: 2].</p>
+                    </div>
+                    <span class="text-xs font-medium text-primary-600 dark:text-primary-400">R / PLS-SEM</span>
+                </div>
+
+                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between gap-3">
+                    <div>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Geometría de la Alhambra</h3>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400">Modelado matemático de los 17 grupos cristalográficos con 19 vídeos educativos en TikTok.</p>
+                    </div>
+                    <span class="text-xs font-medium text-primary-600 dark:text-primary-400">Matemáticas / TikTok</span>
+                </div>
+            </div>
+            <div class="mt-4">
+                <a href="/projects" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Ver todos los proyectos &rarr;</a>
+            </div>
+        </Section>
     </div>
 </Layout>

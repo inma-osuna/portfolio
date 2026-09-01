@@ -47,16 +47,18 @@ import Layout from "@/layouts/Layout.astro";
                 <section class="flex flex-col gap-3">
                     <h3 class="font-bold text-neutral-900 dark:text-white text-xl">Divulgación y Propiedad Intelectual</h3>
                     <p>
-                        Para llevar el rigor académico más allá del papel (redactado íntegramente en LaTeX), el proyecto evolucionó hacia un formato visual. Se diseñaron, editaron y registraron en el Registro de la Propiedad Intelectual un total de <strong>diecinueve vídeos educativos</strong>.
+                        Para llevar el rigor académico más allá del papel (redactado íntegramente en LaTeX), el proyecto evolucionó hacia un formato visual. Se diseñaron, editaron y registraron en el Registro de la Propiedad Intelectual un total de <strong>diecinueve vídeos educativos</strong>[cite: 1, 2].
                     </p>
                     <p>
-                        El objetivo principal fue transformar conceptos abstractos de álgebra y geometría en contenido accesible y atractivo para un público amplio a través de plataformas digitales de formato corto.
+                        El objetivo principal fue transformar conceptos abstractos de geometría en contenido accesible y atractivo para un público amplio a través de plataformas digitales de formato corto.
                     </p>
                 </section>
 
+                <!-- ETIQUETAS ACTUALIZADAS -->
                 <div class="flex flex-wrap gap-2 pt-4">
                     <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">LaTeX</span>
-                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Álgebra Espacial</span>
+                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Geometría</span>
+                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Alhambra</span>
                     <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Divulgación Científica</span>
                 </div>
             </div>
@@ -65,13 +67,8 @@ import Layout from "@/layouts/Layout.astro";
             <div class="lg:col-span-2 flex flex-col items-center justify-center p-6 md:p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50 shadow-inner">
                 <p class="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-6 text-center">Vídeo de Presentación</p>
                 
-                <!-- Mockup Smartphone con Vídeo Integrado -->
                 <div class="relative w-[325px] h-[580px] rounded-[2.5rem] border-[6px] border-neutral-900 dark:border-neutral-800 bg-black overflow-hidden shadow-2xl flex flex-col group mb-6">
-                    
-                    <!-- Isla dinámica / Notch -->
                     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-6 bg-neutral-900 dark:bg-neutral-800 rounded-b-2xl z-20"></div>
-
-                    <!-- Embed oficial de TikTok (Ajustado para Astro) -->
                     <div class="w-full h-full bg-black flex items-center justify-center pt-2">
                         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@inmaosm/video/7672114144090328342" data-video-id="7672114144090328342" style="max-width: 325px; min-width: 325px; margin: 0;">
                             <section>
@@ -82,15 +79,50 @@ import Layout from "@/layouts/Layout.astro";
                     </div>
                 </div>
 
-                <!-- Botón al perfil completo de TikTok -->
                 <a href="https://www.tiktok.com/@inmaosm" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-white bg-black dark:bg-white dark:text-black rounded-full hover:scale-105 transition-transform shadow-md hover:shadow-lg w-full justify-center">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
                     </svg>
                     Visitar perfil @inmaosm
                 </a>
-                
             </div>
         </div>
+
+        <!-- GALERÍA INTERACTIVA DE MOSAICOS REALES -->
+        <section class="mt-8 flex flex-col gap-8 border-t border-neutral-200 dark:border-neutral-800 pt-12">
+            <div class="flex flex-col gap-3">
+                <h3 class="font-bold text-neutral-900 dark:text-white text-2xl">Explorador de Mosaicos</h3>
+                <p class="text-neutral-600 dark:text-neutral-400">Pasa el ratón sobre los patrones de la Alhambra para revelar la estructura del grupo cristalográfico matemático subyacente.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Tarjeta Interactiva 1 (Grupo p4m) -->
+                <div class="relative group aspect-square rounded-3xl overflow-hidden bg-neutral-200 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 shadow-sm cursor-pointer">
+                    <img src="/mosaico-p4m.jpg" alt="Mosaico p4m Alhambra" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://placehold.co/400x400/171717/333333?text=A%C3%B1adir+Foto+p4m.jpg'" />
+                    <div class="absolute inset-0 bg-neutral-900/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center backdrop-blur-md">
+                        <span class="text-rose-400 font-extrabold text-2xl tracking-widest mb-2 font-mono">p4m</span>
+                        <p class="text-white text-sm font-medium leading-relaxed">Rotación de orden 4 con ejes de reflexión que se intersecan en los centros de rotación.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Interactiva 2 (Grupo p6m) -->
+                <div class="relative group aspect-square rounded-3xl overflow-hidden bg-neutral-200 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 shadow-sm cursor-pointer">
+                    <img src="/mosaico-p6m.jpg" alt="Mosaico p6m Alhambra" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://placehold.co/400x400/171717/333333?text=A%C3%B1adir+Foto+p6m.jpg'" />
+                    <div class="absolute inset-0 bg-neutral-900/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center backdrop-blur-md">
+                        <span class="text-orange-400 font-extrabold text-2xl tracking-widest mb-2 font-mono">p6m</span>
+                        <p class="text-white text-sm font-medium leading-relaxed">La simetría más alta posible. Rotación de orden 6 y reflexiones en tres direcciones.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Interactiva 3 (Grupo p3) -->
+                <div class="relative group aspect-square rounded-3xl overflow-hidden bg-neutral-200 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 shadow-sm cursor-pointer">
+                    <img src="/mosaico-p3.jpg" alt="Mosaico p3 Alhambra" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://placehold.co/400x400/171717/333333?text=A%C3%B1adir+Foto+p3.jpg'" />
+                    <div class="absolute inset-0 bg-neutral-900/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center backdrop-blur-md">
+                        <span class="text-rose-400 font-extrabold text-2xl tracking-widest mb-2 font-mono">p3</span>
+                        <p class="text-white text-sm font-medium leading-relaxed">Rotación de orden 3 sin ejes de reflexión. Simetría puramente rotacional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </Layout>

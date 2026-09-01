@@ -7,7 +7,7 @@ const roles = ["Data Engineer", "Data Scientist", "Data Analyst"];
 const competencies = [
     {
         k: "01",
-        title: "Ingeniería & Cloud",
+        title: "Big Data & Cloud",
         body: "Ecosistema Hadoop/Spark, orquestación en Microsoft Fabric, ETL/ELT, Snowflake, Docker, Google Cloud y Azure.",
     },
     {
@@ -70,26 +70,26 @@ const featured = [
 
                 <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl font-medium tracking-tight leading-[0.95] text-neutral-900 dark:text-neutral-50 text-balance">
                     Convierto datos<br />complejos en
-                    <span class="italic text-accent-600 dark:text-accent-300">decisiones</span>.
+                    <span class="italic bg-gradient-to-r from-accent-600 to-accent-300 bg-clip-text text-transparent">decisiones</span>.
                 </h1>
 
                 <p class="text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed max-w-2xl text-pretty">
                     Graduada en Matemáticas y Máster en Técnicas Cuantitativas (UGR), especializándome en
-                    Big Data, Data Science e Inteligencia Artificial (UCM). Combino rigor analítico con
-                    ingeniería de datos para resolver problemas de negocio reales.
+                    Big Data, Data Science e Inteligencia Artificial (UCM). Combino rigor matemático con
+                    el tratamiento de grandes volúmenes de datos para resolver problemas de negocio reales.
                 </p>
 
                 <div class="flex flex-wrap items-center gap-3 pt-1">
                     <a
                         href="/projects"
-                        class="inline-flex items-center gap-2 px-5 py-2.5 bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 text-sm font-medium hover:bg-accent-600 dark:hover:bg-accent-300 transition-colors"
+                        class="inline-flex items-center gap-2 rounded-full px-6 py-2.5 bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 text-sm font-medium hover:bg-accent-600 dark:hover:bg-accent-300 transition-colors"
                     >
                         Ver proyectos
                         <span aria-hidden="true">&rarr;</span>
                     </a>
                     <a
                         href="mailto:inmamuba@gmail.com"
-                        class="inline-flex items-center px-5 py-2.5 border border-neutral-900/20 dark:border-white/20 text-sm font-medium text-neutral-800 dark:text-neutral-200 hover:border-accent-500 hover:text-accent-600 dark:hover:text-accent-300 transition-colors"
+                        class="inline-flex items-center rounded-full px-6 py-2.5 border border-neutral-900/20 dark:border-white/20 text-sm font-medium text-neutral-800 dark:text-neutral-200 hover:border-accent-500 hover:text-accent-600 dark:hover:text-accent-300 transition-colors"
                     >
                         Contactar
                     </a>
@@ -99,9 +99,9 @@ const featured = [
 
         <!-- Competencies -->
         <Section title="Competencias" index="/ 01">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-neutral-900/10 dark:bg-white/10 border border-neutral-900/10 dark:border-white/10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {competencies.map((c) => (
-                    <div class="bg-paper dark:bg-neutral-950 p-6 flex flex-col gap-3">
+                    <div class="group rounded-2xl border border-neutral-900/10 dark:border-white/10 bg-neutral-50/60 dark:bg-neutral-900/40 p-6 flex flex-col gap-3 transition-colors hover:border-accent-500/50 hover:bg-accent-50/50 dark:hover:bg-neutral-900">
                         <span class="font-mono text-xs text-accent-600 dark:text-accent-300">{c.k}</span>
                         <h3 class="font-serif text-xl text-neutral-900 dark:text-neutral-100">{c.title}</h3>
                         <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">{c.body}</p>

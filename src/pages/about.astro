@@ -5,7 +5,7 @@ import EducationCard from "@/components/Resume/EducationCard.astro";
 
 const skillGroups = [
     {
-        label: "Ingeniería & Cloud",
+        label: "Big Data & Cloud",
         items: ["Hadoop / Spark", "Microsoft Fabric", "Azure", "Google Cloud", "Docker", "Snowflake"],
     },
     {
@@ -68,13 +68,13 @@ const education = [
             <div class="flex flex-col gap-5 max-w-2xl">
                 <span class="font-mono text-[11px] uppercase tracking-[0.22em] text-accent-600 dark:text-accent-300">Perfil</span>
                 <h1 class="font-serif text-5xl md:text-6xl font-medium tracking-tight leading-[0.95] text-neutral-900 dark:text-neutral-50 text-balance">
-                    Rigor cuantitativo,<br />mentalidad de ingeniería.
+                    Rigor cuantitativo,<br />mentalidad analítica.
                 </h1>
                 <p class="text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed text-pretty">
                     Data Engineer, Data Scientist y Data Analyst. Especializada en Big Data, Data Science
                     e Inteligencia Artificial (UCM), con Máster en Técnicas Cuantitativas (UGR). Combino una
-                    sólida base matemática con habilidades avanzadas en ingeniería de datos para transformar
-                    grandes volúmenes de información en decisiones estratégicas.
+                    sólida base matemática con el dominio de grandes volúmenes de datos para transformar
+                    la información en decisiones estratégicas.
                 </p>
             </div>
         </header>
@@ -97,7 +97,7 @@ const education = [
                         <h3 class="font-serif text-lg text-neutral-900 dark:text-neutral-100">{g.label}</h3>
                         <ul class="flex flex-wrap gap-2">
                             {g.items.map((s) => (
-                                <li class="font-mono text-xs uppercase tracking-[0.08em] text-neutral-600 dark:text-neutral-300 border border-neutral-900/15 dark:border-white/15 px-2.5 py-1">
+                                <li class="font-mono text-xs uppercase tracking-[0.08em] text-neutral-600 dark:text-neutral-300 border border-neutral-900/15 dark:border-white/15 rounded-full px-3 py-1 transition-colors hover:border-accent-500/60 hover:text-accent-600 dark:hover:text-accent-300">
                                     {s}
                                 </li>
                             ))}

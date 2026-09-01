@@ -1,0 +1,71 @@
+---
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout
+    seo={{
+        title: "Análisis de Influencers Virtuales — Inmaculada Osuna",
+        description: "Modelado de ecuaciones estructurales PLS-SEM para extraer métricas de negocio.",
+    }}
+>
+    <div class="flex flex-col gap-10 py-12 max-w-3xl mx-auto antialiased">
+        
+        <div>
+            <a href="/projects" class="text-sm font-semibold text-rose-500 hover:text-rose-600 transition-colors inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Volver a Proyectos
+            </a>
+        </div>
+
+        <!-- NUEVA CABECERA -->
+        <header class="flex flex-col border-b border-neutral-200 dark:border-neutral-800 pb-8">
+            <div class="mb-5">
+                <span class="px-3 py-1.5 text-xs font-bold tracking-widest text-orange-600 bg-orange-50 border border-orange-200 rounded-full dark:bg-orange-900/20 dark:text-orange-400 dark:border-orange-800/50">DATA SCIENCE & PLS-SEM</span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-white mb-3">
+                Análisis de Influencers Virtuales
+            </h1>
+            
+            <span class="text-base font-medium text-neutral-500 dark:text-neutral-400 mb-6 flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0v7"></path></svg>
+                TFM — Universidad de Granada
+            </span>
+            
+            <p class="text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+                Análisis del impacto y percepción de los Influencers Virtuales mediante el diseño de estudios de mercado y modelado de ecuaciones estructurales.
+            </p>
+        </header>
+
+        <div class="flex flex-col gap-10 text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            
+            <section class="flex flex-col gap-3">
+                <h3 class="font-bold text-neutral-900 dark:text-white text-xl flex items-center gap-2">
+                    <span class="text-orange-500">◆</span> Diseño del Estudio
+                </h3>
+                <p>
+                    Con el auge de los influencers generados por IA, surgió la necesidad de cuantificar cómo estas entidades afectan al comportamiento del consumidor en comparación con los humanos. El proyecto abarcó desde el diseño integral de la investigación y la recolección de datos primarios mediante encuestas, hasta el tratamiento avanzado de los mismos.
+                </p>
+            </section>
+
+            <section class="flex flex-col gap-3">
+                <h3 class="font-bold text-neutral-900 dark:text-white text-xl flex items-center gap-2">
+                    <span class="text-orange-500">◆</span> Modelado Estadístico (PLS-SEM)
+                </h3>
+                <p>
+                    Para analizar las complejas relaciones entre variables latentes (como la confianza, la intención de compra o el *engagement*), se utilizó el modelado de ecuaciones estructurales por mínimos cuadrados parciales <strong>(PLS-SEM)</strong>.
+                </p>
+                <p>
+                    Todo el flujo de limpieza, transformación y análisis exploratorio de datos fue programado en <strong>R</strong>, haciendo uso extensivo del ecosistema <strong>Tidyverse</strong>. Los resultados permitieron extraer insights directos de comportamiento y métricas de negocio para campañas de marketing digital.
+                </p>
+            </section>
+
+            <div class="flex flex-wrap gap-3 pt-2">
+                <span class="px-4 py-2 text-xs font-bold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-xl dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">R</span>
+                <span class="px-4 py-2 text-xs font-bold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-xl dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Tidyverse</span>
+                <span class="px-4 py-2 text-xs font-bold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-xl dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Estadística Multivariante</span>
+                <span class="px-4 py-2 text-xs font-bold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-xl dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">PLS-SEM</span>
+            </div>
+        </div>
+    </div>
+</Layout>

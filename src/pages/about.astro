@@ -1,10 +1,7 @@
 ---
-import { Icon } from "astro-icon/components";
 import Layout from "@/layouts/Layout.astro";
 import Section from "@/components/Section.astro";
 import EducationCard from "@/components/Resume/EducationCard.astro";
-import SkillGroup from "@/components/Resume/SkillGroup.astro";
-import Skill from "@/components/Resume/Skill.astro";
 ---
 
 <Layout
@@ -45,53 +42,59 @@ import Skill from "@/components/Resume/Skill.astro";
             </div>
         </Section>
 
-        <!-- Skills -->
+        <!-- Skills en Formato Etiquetas (Sin iconos rotos) -->
         <Section title="Competencias Técnicas">
-            <div class="flex flex-col gap-6">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <SkillGroup name="Ingeniería & Cloud">
-                        <Skill icon="devicon:apachespark" name="Hadoop / Spark" />
-                        <Skill icon="devicon:azure" name="Fabric / Azure" />
-                        <Skill icon="devicon:googlecloud" name="Google Cloud" />
-                        <Skill icon="devicon:docker" name="Docker" />
-                        <div class="flex flex-col items-center gap-2 mt-2">
-                            <span class="text-xs text-neutral-600 dark:text-neutral-400 font-medium hover:text-rose-500 transition-colors">Snowflake</span>
-                        </div>
-                    </SkillGroup>
-
-                    <SkillGroup name="Bases de Datos">
-                        <Skill icon="devicon:postgresql" name="PostgreSQL" />
-                        <Skill icon="devicon:microsoftsqlserver" name="SQL Server" />
-                        <Skill icon="devicon:mongodb" name="MongoDB" />
-                    </SkillGroup>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm hover:border-rose-300 dark:hover:border-rose-700 transition-colors">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-4 flex items-center gap-2">
+                        <span class="text-rose-500">◆</span> Ingeniería & Cloud
+                    </h3>
+                    <div class="flex flex-wrap gap-2.5">
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Hadoop / Spark</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Fabric / Azure</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Google Cloud</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Docker</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Snowflake</span>
+                    </div>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <SkillGroup name="Data Science & IA">
-                        <Skill icon="devicon:python" name="Python (Pandas, Scikit-learn)" />
-                        <Skill icon="devicon:r" name="R (Tidyverse)" />
-                        <Skill icon="devicon:tensorflow" name="Machine / Deep Learning" />
-                        <div class="flex flex-col items-center gap-2 mt-2">
-                            <span class="text-xs text-neutral-600 dark:text-neutral-400 font-medium hover:text-rose-500 transition-colors">NLP & Series Temporales</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-2">
-                            <span class="text-xs text-neutral-600 dark:text-neutral-400 font-medium hover:text-rose-500 transition-colors">Optimización Lineal / Entera</span>
-                        </div>
-                    </SkillGroup>
-                    
-                    <SkillGroup name="Software & BI">
-                        <div class="flex flex-col items-center gap-2 mb-2">
-                            <span class="text-xs text-neutral-600 dark:text-neutral-400 font-medium hover:text-orange-500 transition-colors">Power Apps / Automate</span>
-                        </div>
-                        <Skill icon="devicon:latex" name="LaTeX" />
-                        <div class="flex flex-col items-center gap-2 mt-2">
-                            <span class="text-xs text-neutral-600 dark:text-neutral-400 font-medium hover:text-orange-500 transition-colors">Stata / SPSS</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-2">
-                            <span class="text-xs text-neutral-600 dark:text-neutral-400 font-medium hover:text-orange-500 transition-colors">Modelado PLS-SEM</span>
-                        </div>
-                    </SkillGroup>
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm hover:border-orange-300 dark:hover:border-orange-700 transition-colors">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-4 flex items-center gap-2">
+                        <span class="text-orange-500">◆</span> Bases de Datos
+                    </h3>
+                    <div class="flex flex-wrap gap-2.5">
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">PostgreSQL</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">SQL Server</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">MongoDB</span>
+                    </div>
                 </div>
+
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm hover:border-rose-300 dark:hover:border-rose-700 transition-colors">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-4 flex items-center gap-2">
+                        <span class="text-rose-500">◆</span> Data Science & IA
+                    </h3>
+                    <div class="flex flex-wrap gap-2.5">
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Python (Pandas, Sklearn)</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">R (Tidyverse)</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Machine / Deep Learning</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">NLP</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Series Temporales</span>
+                    </div>
+                </div>
+                
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm hover:border-orange-300 dark:hover:border-orange-700 transition-colors">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-4 flex items-center gap-2">
+                        <span class="text-orange-500">◆</span> Software, BI & Modelado
+                    </h3>
+                    <div class="flex flex-wrap gap-2.5">
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Power Apps / Automate</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">LaTeX</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Stata / SPSS</span>
+                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Modelado PLS-SEM</span>
+                    </div>
+                </div>
+
             </div>
         </Section>
 

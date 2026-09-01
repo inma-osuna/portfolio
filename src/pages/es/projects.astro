@@ -1,0 +1,100 @@
+---
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout
+    seo={{
+        title: "Proyectos",
+        description: "Portfolio de proyectos de Inmaculada Osuna",
+    }}
+>
+    <div class="flex flex-col gap-12 py-12 antialiased">
+        
+        <!-- Header de Proyectos -->
+        <section class="flex flex-col gap-4 max-w-2xl">
+            <h1 class="text-3xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-100">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-rose-500 to-orange-400">Proyectos</span>
+            </h1>
+            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed text-lg mt-2">
+                Explora en detalle mis trabajos de investigación, tesis y desarrollos aplicados en Machine Learning, optimización de datos y modelado matemático.
+            </p>
+        </section>
+
+        <!-- Lista de Proyectos -->
+        <section class="flex flex-col gap-8">
+            
+            <!-- Proyecto 1: TFM UCM -->
+            <div class="p-6 md:p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 flex flex-col gap-5 group">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                    <div>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-xl group-hover:text-rose-500 transition-colors">Motor de Dynamic Pricing</h3>
+                        <p class="text-sm font-medium text-neutral-500 dark:text-neutral-400 mt-1">TFM — Universidad Complutense de Madrid</p>
+                    </div>
+                    <span class="px-3 py-1.5 text-xs font-bold tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800/50 whitespace-nowrap">DEEP RL</span>
+                </div>
+                <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                    Desarrollo de un sistema inteligente de revenue management y optimización de capacidad en el transporte interurbano mediante modelos de Deep Reinforcement Learning. La solución técnica fue implementada con PySpark y cuenta con una interfaz de visualización interactiva construida en Streamlit.
+                </p>
+                <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">PySpark</span>
+                        <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Streamlit</span>
+                        <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Python</span>
+                    </div>
+                    <a href="/projects/dynamic-pricing" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-bold text-neutral-900 dark:text-white bg-neutral-100 dark:bg-neutral-800 rounded-full hover:bg-rose-500 hover:text-white dark:hover:bg-rose-600 transition-colors shadow-sm">
+                        Ver Caso de Estudio &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: TFM UGR -->
+            <div class="p-6 md:p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-orange-300 dark:hover:border-orange-700 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/10 hover:-translate-y-1 flex flex-col gap-5 group">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                    <div>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-xl group-hover:text-orange-500 transition-colors">Análisis de Influencers Virtuales</h3>
+                        <p class="text-sm font-medium text-neutral-500 dark:text-neutral-400 mt-1">TFM — Universidad de Granada</p>
+                    </div>
+                    <span class="px-3 py-1.5 text-xs font-bold tracking-widest text-orange-600 bg-orange-50 border border-orange-200 rounded-full dark:bg-orange-900/20 dark:text-orange-400 dark:border-orange-800/50 whitespace-nowrap">DATA SCIENCE</span>
+                </div>
+                <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                    Análisis exhaustivo del impacto y la percepción de los Influencers Virtuales. El proyecto abarcó desde el diseño del estudio de mercado hasta el modelado de ecuaciones estructurales (PLS-SEM) basado en datos de encuestas, con el objetivo de extraer insights de comportamiento de consumo y métricas clave de negocio.
+                </p>
+                <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">R</span>
+                        <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Tidyverse</span>
+                        <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Modelado PLS-SEM</span>
+                    </div>
+                    <a href="/projects/influencers" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-bold text-neutral-900 dark:text-white bg-neutral-100 dark:bg-neutral-800 rounded-full hover:bg-orange-500 hover:text-white dark:hover:bg-orange-600 transition-colors shadow-sm">
+                        Ver Caso de Estudio &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Proyecto 3: TFG UGR -->
+            <div class="p-6 md:p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 flex flex-col gap-5 group">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                    <div>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-xl group-hover:text-rose-500 transition-colors">Geometría de la Alhambra</h3>
+                        <p class="text-sm font-medium text-neutral-500 dark:text-neutral-400 mt-1">TFG — Universidad de Granada</p>
+                    </div>
+                    <span class="px-3 py-1.5 text-xs font-bold tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800/50 whitespace-nowrap">MATEMÁTICAS</span>
+                </div>
+                <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                    Proyecto de investigación y divulgación científica que combina rigor académico y creatividad. Centrado en el modelado matemático de los 17 grupos cristalográficos presentes en los mosaicos de la Alhambra, complementado con la creación y registro de una serie de vídeos educativos.
+                </p>
+                <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">LaTeX</span>
+                        <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Álgebra</span>
+                        <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Divulgación</span>
+                    </div>
+                    <a href="/projects/alhambra" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-bold text-neutral-900 dark:text-white bg-neutral-100 dark:bg-neutral-800 rounded-full hover:bg-rose-500 hover:text-white dark:hover:bg-rose-600 transition-colors shadow-sm">
+                        Ver Caso de Estudio &rarr;
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</Layout>

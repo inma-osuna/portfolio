@@ -10,24 +10,35 @@ import Section from "@/components/Section.astro";
     }}
 >
     <div class="flex flex-col gap-16 py-12 antialiased">
-        <!-- Hero Section -->
-        <section class="flex flex-col items-center text-center gap-6">
-            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-100">
-                Hola, soy Inmaculada Osuna
+        <!-- Hero Section (Estilo Premium) -->
+        <section class="flex flex-col items-center text-center gap-6 mt-4">
+            <!-- Etiquetas de Roles -->
+            <div class="flex flex-wrap justify-center gap-2 mb-2">
+                <span class="px-3 py-1 text-xs font-bold tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800/50">DATA ENGINEER</span>
+                <span class="px-3 py-1 text-xs font-bold tracking-widest text-orange-600 bg-orange-50 border border-orange-200 rounded-full dark:bg-orange-900/20 dark:text-orange-400 dark:border-orange-800/50">DATA SCIENTIST</span>
+                <span class="px-3 py-1 text-xs font-bold tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800/50">DATA ANALYST</span>
+            </div>
+
+            <!-- Título con Degradado -->
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-neutral-900 dark:text-white">
+                Hola, soy <br class="sm:hidden" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-orange-400">Inmaculada Osuna</span>
             </h1>
-            <p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-                <strong>Data Engineer, Data Scientist y Data Analyst.</strong> Especializada en Big Data, algoritmos de Machine Learning y arquitecturas en la nube. Transformando volúmenes complejos de información en decisiones estratégicas.
+            
+            <p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl mt-2">
+                Especializada en Big Data, algoritmos de Machine Learning y arquitecturas en la nube. Transformando volúmenes complejos de información en decisiones estratégicas.
             </p>
-            <div class="flex flex-wrap justify-center gap-3">
+            
+            <div class="flex flex-wrap justify-center gap-4 mt-4">
                 <a
                     href="/projects"
-                    class="inline-flex items-center px-5 py-2.5 rounded-lg bg-primary-600 text-white text-sm font-medium hover:bg-primary-700 transition-colors"
+                    class="inline-flex items-center px-6 py-3 rounded-full bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-sm font-semibold hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                 >
                     Ver Proyectos
                 </a>
                 <a
                     href="mailto:inmamuba@gmail.com"
-                    class="inline-flex items-center px-5 py-2.5 rounded-lg border border-neutral-300 dark:border-neutral-700 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+                    class="inline-flex items-center px-6 py-3 rounded-full border border-neutral-200 dark:border-neutral-800 text-sm font-semibold text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
                 >
                     Contactar
                 </a>
@@ -37,16 +48,16 @@ import Section from "@/components/Section.astro";
         <!-- Resumen de Habilidades Clave -->
         <Section title="Competencias Destacadas">
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-                <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
-                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Lenguajes & Datos</h3>
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-2">Lenguajes & Datos</h3>
                     <p class="text-sm text-neutral-600 dark:text-neutral-400">Python, R, SQL, PySpark y C++</p>
                 </div>
-                <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
-                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Cloud & DevOps</h3>
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-2">Cloud & DevOps</h3>
                     <p class="text-sm text-neutral-600 dark:text-neutral-400">Microsoft Fabric, Snowflake, Docker y Cloud</p>
                 </div>
-                <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
-                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Modelado & IA</h3>
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-2">Modelado & IA</h3>
                     <p class="text-sm text-neutral-600 dark:text-neutral-400">Machine Learning, NLP, PLS-SEM y Deep RL</p>
                 </div>
             </div>
@@ -55,48 +66,48 @@ import Section from "@/components/Section.astro";
         <!-- Experiencia Profesional -->
         <Section title="Experiencia Profesional">
             <div class="flex flex-col gap-6">
-                <div class="flex flex-col gap-1 border-l-2 border-primary-500 pl-4">
+                <div class="flex flex-col gap-2 border-l-2 border-rose-400 pl-5">
                     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100">Prácticas Extracurriculares</h3>
+                        <h3 class="font-semibold text-neutral-900 dark:text-neutral-100 text-lg">Prácticas Extracurriculares</h3>
                     </div>
-                    <span class="text-sm text-primary-600 dark:text-primary-400">NTTDATA</span>
+                    <span class="text-sm font-medium text-rose-500 dark:text-rose-400">NTTDATA</span>
                     <p class="text-sm text-neutral-600 dark:text-neutral-400">Orquestación de datos y procesos ETL en la nube utilizando Microsoft Fabric. Automatización y desarrollo de soluciones low-code.</p>
                 </div>
             </div>
             <div class="mt-4">
-                <a href="/about#experience" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Ver trayectoria completa &rarr;</a>
+                <a href="/about#experience" class="text-sm font-medium text-rose-500 dark:text-rose-400 hover:underline">Ver trayectoria completa &rarr;</a>
             </div>
         </Section>
 
         <!-- Proyectos y Tesis Destacados -->
         <Section title="Proyectos y Tesis">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between gap-3">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-colors flex flex-col justify-between gap-4 group">
                     <div>
-                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Sistema de Dynamic Pricing</h3>
-                        <p class="text-sm text-neutral-600 dark:text-neutral-400">Optimización de capacidad en el transporte interurbano con Deep Reinforcement Learning (TFM UCM).</p>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-2 group-hover:text-rose-500 transition-colors">Sistema de Dynamic Pricing</h3>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Optimización de capacidad en el transporte interurbano con Deep Reinforcement Learning (TFM UCM).</p>
                     </div>
-                    <span class="text-xs font-medium text-primary-600 dark:text-primary-400">PySpark / Streamlit</span>
+                    <span class="text-xs font-semibold text-neutral-500 dark:text-neutral-400 bg-neutral-100 dark:bg-neutral-800 w-fit px-2.5 py-1 rounded-md">PySpark / Streamlit</span>
                 </div>
                 
-                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between gap-3">
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-orange-300 dark:hover:border-orange-700 transition-colors flex flex-col justify-between gap-4 group">
                     <div>
-                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Análisis de Influencers Virtuales</h3>
-                        <p class="text-sm text-neutral-600 dark:text-neutral-400">Diseño y modelado de ecuaciones estructurales para extraer métricas de negocio (TFM UGR).</p>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-2 group-hover:text-orange-500 transition-colors">Análisis de Influencers</h3>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Diseño y modelado de ecuaciones estructurales para extraer métricas de negocio (TFM UGR).</p>
                     </div>
-                    <span class="text-xs font-medium text-primary-600 dark:text-primary-400">R / PLS-SEM</span>
+                    <span class="text-xs font-semibold text-neutral-500 dark:text-neutral-400 bg-neutral-100 dark:bg-neutral-800 w-fit px-2.5 py-1 rounded-md">R / PLS-SEM</span>
                 </div>
 
-                <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between gap-3">
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-colors flex flex-col justify-between gap-4 group">
                     <div>
-                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-1">Geometría de la Alhambra</h3>
-                        <p class="text-sm text-neutral-600 dark:text-neutral-400">Modelado matemático de los 17 grupos cristalográficos con vídeos educativos (TFG UGR).</p>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-2 group-hover:text-rose-500 transition-colors">Geometría de la Alhambra</h3>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Modelado matemático de los 17 grupos cristalográficos con vídeos educativos (TFG UGR).</p>
                     </div>
-                    <span class="text-xs font-medium text-primary-600 dark:text-primary-400">Matemáticas / LaTeX</span>
+                    <span class="text-xs font-semibold text-neutral-500 dark:text-neutral-400 bg-neutral-100 dark:bg-neutral-800 w-fit px-2.5 py-1 rounded-md">Matemáticas / LaTeX</span>
                 </div>
             </div>
             <div class="mt-4">
-                <a href="/projects" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Ver todos los proyectos &rarr;</a>
+                <a href="/projects" class="text-sm font-medium text-rose-500 dark:text-rose-400 hover:underline">Ver todos los proyectos &rarr;</a>
             </div>
         </Section>
     </div>

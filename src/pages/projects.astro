@@ -1,5 +1,38 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+
+const projects = [
+    {
+        n: "01",
+        title: "Motor de Dynamic Pricing",
+        org: "TFM — Universidad Complutense de Madrid",
+        tag: "Deep RL",
+        body: "Desarrollo de un sistema inteligente de revenue management y optimización de capacidad en el transporte interurbano mediante modelos de Deep Reinforcement Learning. La solución técnica fue implementada con PySpark y cuenta con una interfaz de visualización interactiva construida en Streamlit.",
+        stack: ["PySpark", "Streamlit", "Python"],
+        link: null,
+    },
+    {
+        n: "02",
+        title: "Análisis de Influencers Virtuales",
+        org: "TFM — Universidad de Granada",
+        tag: "Data Science",
+        body: "Análisis exhaustivo del impacto y la percepción de los Influencers Virtuales. El proyecto abarcó desde el diseño del estudio de mercado hasta el modelado de ecuaciones estructurales (PLS-SEM) basado en datos de encuestas, con el objetivo de extraer insights de comportamiento de consumo y métricas clave de negocio.",
+        stack: ["R", "Tidyverse", "PLS-SEM"],
+        link: null,
+    },
+    {
+        n: "03",
+        title: "Geometría de la Alhambra",
+        org: "TFG — Universidad de Granada",
+        tag: "Matemáticas",
+        body: "Proyecto de investigación y divulgación científica que combina rigor académico y creatividad. Centrado en el modelado matemático de los 17 grupos cristalográficos presentes en los mosaicos de la Alhambra, complementado con la creación y registro de una serie de vídeos educativos.",
+        stack: ["LaTeX", "Álgebra", "Divulgación"],
+        link: {
+            href: "https://www.tiktok.com/@inmaosm?is_from_webapp=1&sender_device=pc",
+            label: "Ver en TikTok",
+        },
+    },
+];
 ---
 
 <Layout
@@ -8,88 +41,68 @@ import Layout from "@/layouts/Layout.astro";
         description: "Portfolio de proyectos de Inmaculada Osuna",
     }}
 >
-    <div class="flex flex-col gap-12 py-12 antialiased">
-        
-        <!-- Header de Proyectos (Estilo Premium) -->
-        <section class="flex flex-col gap-4 max-w-2xl">
-            <h1 class="text-3xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-100">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-rose-500 to-orange-400">Proyectos</span>
+    <div class="flex flex-col gap-16 py-14 md:py-20">
+        <!-- Header -->
+        <header class="flex flex-col gap-5 max-w-2xl">
+            <span class="font-mono text-[11px] uppercase tracking-[0.22em] text-accent-600 dark:text-accent-300">Índice de trabajo</span>
+            <h1 class="font-serif text-5xl md:text-6xl font-medium tracking-tight leading-[0.95] text-neutral-900 dark:text-neutral-50 text-balance">
+                Proyectos
             </h1>
-            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed text-lg mt-2">
-                Explora en detalle mis trabajos de investigación, tesis y desarrollos aplicados en Machine Learning, optimización de datos y modelado matemático.
+            <p class="text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed text-pretty">
+                Investigación, tesis y desarrollos aplicados en Machine Learning, optimización de datos
+                y modelado matemático.
             </p>
-        </section>
+        </header>
 
-        <!-- Lista de Proyectos -->
-        <section class="flex flex-col gap-8">
-            
-            <!-- Proyecto 1: TFM UCM -->
-            <div class="p-6 md:p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 flex flex-col gap-5 group">
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
-                    <div>
-                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-xl group-hover:text-rose-500 transition-colors">Motor de Dynamic Pricing</h3>
-                        <p class="text-sm font-medium text-neutral-500 dark:text-neutral-400 mt-1">TFM — Universidad Complutense de Madrid</p>
+        <!-- Project ledger -->
+        <div class="flex flex-col border-t border-neutral-900/12 dark:border-white/12">
+            {projects.map((p) => (
+                <article class="grid grid-cols-1 md:grid-cols-[4rem_1fr] gap-4 md:gap-8 py-10 border-b border-neutral-900/12 dark:border-white/12">
+                    <div class="flex md:flex-col items-center md:items-start gap-3 md:gap-4">
+                        <span class="font-mono text-sm text-accent-600 dark:text-accent-300 tabular-nums">{p.n}</span>
+                        <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-500 border border-neutral-900/15 dark:border-white/15 px-2 py-0.5">
+                            {p.tag}
+                        </span>
                     </div>
-                    <span class="px-3 py-1.5 text-xs font-bold tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800/50 whitespace-nowrap">DEEP RL</span>
-                </div>
-                <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                    Desarrollo de un sistema inteligente de revenue management y optimización de capacidad en el transporte interurbano mediante modelos de Deep Reinforcement Learning. La solución técnica fue implementada con PySpark y cuenta con una interfaz de visualización interactiva construida en Streamlit.
-                </p>
-                <div class="flex flex-wrap gap-2 pt-2">
-                    <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">PySpark</span>
-                    <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Streamlit</span>
-                    <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Python</span>
-                </div>
-            </div>
 
-            <!-- Proyecto 2: TFM UGR -->
-            <div class="p-6 md:p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-orange-300 dark:hover:border-orange-700 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/10 hover:-translate-y-1 flex flex-col gap-5 group">
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
-                    <div>
-                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-xl group-hover:text-orange-500 transition-colors">Análisis de Influencers Virtuales</h3>
-                        <p class="text-sm font-medium text-neutral-500 dark:text-neutral-400 mt-1">TFM — Universidad de Granada</p>
-                    </div>
-                    <span class="px-3 py-1.5 text-xs font-bold tracking-widest text-orange-600 bg-orange-50 border border-orange-200 rounded-full dark:bg-orange-900/20 dark:text-orange-400 dark:border-orange-800/50 whitespace-nowrap">DATA SCIENCE</span>
-                </div>
-                <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                    Análisis exhaustivo del impacto y la percepción de los Influencers Virtuales. El proyecto abarcó desde el diseño del estudio de mercado hasta el modelado de ecuaciones estructurales (PLS-SEM) basado en datos de encuestas, con el objetivo de extraer insights de comportamiento de consumo y métricas clave de negocio.
-                </p>
-                <div class="flex flex-wrap gap-2 pt-2">
-                    <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">R</span>
-                    <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Tidyverse</span>
-                    <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Modelado PLS-SEM</span>
-                </div>
-            </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-1">
+                            <h2 class="font-serif text-2xl md:text-3xl font-medium text-neutral-900 dark:text-neutral-50 leading-snug">
+                                {p.title}
+                            </h2>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400">{p.org}</p>
+                        </div>
 
-            <!-- Proyecto 3: TFG UGR con TikTok -->
-            <div class="p-6 md:p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 flex flex-col gap-5 group">
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
-                    <div>
-                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-xl group-hover:text-rose-500 transition-colors">Geometría de la Alhambra</h3>
-                        <p class="text-sm font-medium text-neutral-500 dark:text-neutral-400 mt-1">TFG — Universidad de Granada</p>
-                    </div>
-                    <span class="px-3 py-1.5 text-xs font-bold tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800/50 whitespace-nowrap">MATEMÁTICAS</span>
-                </div>
-                <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                    Proyecto de investigación y divulgación científica que combina rigor académico y creatividad. Centrado en el modelado matemático de los 17 grupos cristalográficos presentes en los mosaicos de la Alhambra, complementado con la creación y registro de una serie de vídeos educativos.
-                </p>
-                <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">LaTeX</span>
-                        <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Álgebra</span>
-                        <span class="px-2.5 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-md dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Divulgación</span>
-                    </div>
-                    
-                    <!-- BOTÓN TIKTOK -->
-                    <a href="https://www.tiktok.com/@inmaosm?is_from_webapp=1&sender_device=pc" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-bold text-white bg-black dark:bg-white dark:text-black rounded-full hover:scale-105 transition-transform shadow-md hover:shadow-lg">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-                        </svg>
-                        Ver en TikTok
-                    </a>
-                </div>
-            </div>
+                        <p class="text-neutral-600 dark:text-neutral-300 leading-relaxed max-w-2xl text-pretty">
+                            {p.body}
+                        </p>
 
-        </section>
+                        <div class="flex flex-wrap items-center justify-between gap-4 pt-1">
+                            <ul class="flex flex-wrap gap-x-4 gap-y-1">
+                                {p.stack.map((s) => (
+                                    <li class="font-mono text-[11px] uppercase tracking-[0.12em] text-neutral-500 dark:text-neutral-400">
+                                        {s}
+                                    </li>
+                                ))}
+                            </ul>
+
+                            {p.link && (
+                                <a
+                                    href={p.link.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-2 text-sm font-medium text-neutral-800 dark:text-neutral-200 border-b border-accent-500 pb-0.5 hover:text-accent-600 dark:hover:text-accent-300 transition-colors"
+                                >
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                    </svg>
+                                    {p.link.label}
+                                </a>
+                            )}
+                        </div>
+                    </div>
+                </article>
+            ))}
+        </div>
     </div>
 </Layout>

@@ -2,17 +2,22 @@
 export interface Props {
     title?: string;
     id?: string;
+    index?: string;
 }
 
-const { title, id } = Astro.props;
+const { title, id, index } = Astro.props;
 ---
 
-<section id={id} class="flex flex-col gap-6 w-full mt-2">
+<section id={id} class="flex flex-col gap-6 w-full">
     {title && (
-        <h2 class="text-lg sm:text-xl font-bold tracking-tight text-neutral-900 dark:text-white flex items-center gap-2.5">
-            <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-rose-400 to-orange-400 shadow-sm"></span>
-            {title}
-        </h2>
+        <div class="flex items-baseline gap-3 border-b border-neutral-900/12 dark:border-white/12 pb-3">
+            {index && (
+                <span class="font-mono text-xs text-accent-600 dark:text-accent-300 tabular-nums">{index}</span>
+            )}
+            <h2 class="text-xs font-mono uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">
+                {title}
+            </h2>
+        </div>
     )}
     <slot />
 </section>

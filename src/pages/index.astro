@@ -13,14 +13,14 @@ import Section from "@/components/Section.astro";
         <!-- Hero Section -->
         <section class="flex flex-col items-center text-center gap-6 mt-4">
             
-            <!-- Status Pill -->
-            <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shadow-sm mb-2">
+            <!-- Status Badge de Disponibilidad -->
+            <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-emerald-200 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-900/20 shadow-sm mb-2">
                 <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                <span class="text-xs font-medium text-neutral-600 dark:text-neutral-300 tracking-wide">
-                    Construyendo soluciones de datos
+                <span class="text-xs font-medium text-emerald-700 dark:text-emerald-400 tracking-wide">
+                    Abierta a nuevos retos | Movilidad Nacional e Internacional
                 </span>
             </div>
 
@@ -49,6 +49,27 @@ import Section from "@/components/Section.astro";
                 >
                     Ver Proyectos
                 </a>
+                
+                <!-- Botón Descargar CV (ES) -->
+                <a
+                    href="/CV-Inmaculada Osuna Muñoz_2.pdf"
+                    download="CV_Inmaculada_Osuna_ES.pdf"
+                    class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border-2 border-rose-500 text-sm font-bold text-rose-600 dark:text-rose-400 hover:bg-rose-500 hover:text-white dark:hover:bg-rose-500 dark:hover:text-white transition-all shadow-lg hover:shadow-rose-500/20 hover:-translate-y-0.5"
+                >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    CV (ES)
+                </a>
+
+                <!-- Botón Descargar CV (EN) -->
+                <a
+                    href="/EN-CV-Inmaculada Osuna Muñoz.pdf"
+                    download="CV_Inmaculada_Osuna_EN.pdf"
+                    class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border-2 border-orange-500 text-sm font-bold text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white dark:hover:bg-orange-500 dark:hover:text-white transition-all shadow-lg hover:shadow-orange-500/20 hover:-translate-y-0.5"
+                >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    CV (EN)
+                </a>
+
                 <a
                     href="mailto:inmamuba@gmail.com"
                     class="inline-flex items-center px-6 py-2.5 rounded-full border border-neutral-200 dark:border-neutral-800 text-sm font-semibold text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all hover:-translate-y-0.5"

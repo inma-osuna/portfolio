@@ -14,33 +14,33 @@ import PageContainer from "@/components/PageContainer.astro";
 import DarkModeScript from "@/components/DarkModeScript.astro";
 
 export interface Props {
-	seo: SeoProps;
+    seo: SeoProps;
 }
 
 const { seo } = Astro.props;
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<SEO
-			titleTemplate="%s — inmaosuna"
-			titleDefault="Portfolio"
-			description="My personal portfolio and blog website"
-			{...seo}
-		/>
-		<DarkModeScript />
-		<ClientRouter />
-	</head>
-	<body>
-		<PageContainer>
-			<Header />
-			<main>
-				<slot />
-			</main>
-			<Footer />
-		</PageContainer>
-	</body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <SEO
+            titleTemplate="%s — Inmaculada Osuna"
+            titleDefault="Portfolio | Inmaculada Osuna"
+            description="Portfolio profesional de Inmaculada Osuna: Data Engineer, Data Scientist y Data Analyst."
+            {...seo}
+        />
+        <DarkModeScript />
+        <ClientRouter />
+    </head>
+    <body>
+        <PageContainer>
+            <Header />
+            <main>
+                <slot />
+            </main>
+            <Footer />
+        </PageContainer>
+    </body>
 </html>

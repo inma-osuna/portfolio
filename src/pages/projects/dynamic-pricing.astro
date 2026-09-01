@@ -17,15 +17,22 @@ import Layout from "@/layouts/Layout.astro";
             </a>
         </div>
 
-        <header class="flex flex-col gap-4 border-b border-neutral-200 dark:border-neutral-800 pb-8">
-            <div class="flex items-center gap-2">
-                <span class="px-3 py-1 text-xs font-bold tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800/50">DEEP RL & BIG DATA</span>
-                <span class="text-sm font-medium text-neutral-500">TFM — UCM (Madrid)</span>
+        <!-- NUEVA CABECERA -->
+        <header class="flex flex-col border-b border-neutral-200 dark:border-neutral-800 pb-8">
+            <div class="mb-5">
+                <span class="px-3 py-1.5 text-xs font-bold tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800/50">DEEP RL & BIG DATA</span>
             </div>
-            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-white">
+            
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-white mb-3">
                 Sistema Inteligente de Dynamic Pricing
             </h1>
-            <p class="text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 leading-relaxed mt-2">
+            
+            <span class="text-base font-medium text-neutral-500 dark:text-neutral-400 mb-6 flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0v7"></path></svg>
+                TFM — UCM (Madrid)
+            </span>
+            
+            <p class="text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
                 Optimización de capacidad y motores de precios en el transporte interurbano ferroviario mediante arquitecturas de Deep Reinforcement Learning.
             </p>
         </header>

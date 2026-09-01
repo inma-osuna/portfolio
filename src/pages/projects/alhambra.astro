@@ -1,0 +1,91 @@
+---
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout
+    seo={{
+        title: "Geometría de la Alhambra — Inmaculada Osuna",
+        description: "Modelado matemático de los 17 grupos cristalográficos y divulgación científica.",
+    }}
+>
+    <div class="flex flex-col gap-10 py-12 max-w-4xl mx-auto antialiased">
+        
+        <!-- Botón Volver -->
+        <div>
+            <a href="/projects" class="text-sm font-semibold text-rose-500 hover:text-rose-600 transition-colors inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Volver a Proyectos
+            </a>
+        </div>
+
+        <!-- Cabecera -->
+        <header class="flex flex-col gap-4 border-b border-neutral-200 dark:border-neutral-800 pb-8">
+            <div class="flex items-center gap-2">
+                <span class="px-3 py-1 text-xs font-bold tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800/50">MATEMÁTICAS & DIVULGACIÓN</span>
+                <span class="text-sm font-medium text-neutral-500">TFG — Universidad de Granada</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-white">
+                Geometría de la Alhambra
+            </h1>
+            <p class="text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl mt-2">
+                Análisis y modelado matemático de los 17 grupos cristalográficos planos presentes en los mosaicos del monumento, llevado a la divulgación digital.
+            </p>
+        </header>
+
+        <!-- Contenido y TikTok -->
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+            
+            <!-- Columna de Texto (Ocupa 3 columnas) -->
+            <div class="lg:col-span-3 flex flex-col gap-8 text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                <section class="flex flex-col gap-3">
+                    <h3 class="font-bold text-neutral-900 dark:text-white text-xl">El reto matemático</h3>
+                    <p>
+                        Los palacios nazaríes de la Alhambra albergan una de las mayores muestras de simetría ornamental del mundo. Este proyecto se centró en demostrar y estructurar matemáticamente cómo estos patrones repetitivos encajan en la teoría de los grupos cristalográficos bidimensionales (los 17 grupos de simetría plana).
+                    </p>
+                </section>
+
+                <section class="flex flex-col gap-3">
+                    <h3 class="font-bold text-neutral-900 dark:text-white text-xl">Divulgación y Propiedad Intelectual</h3>
+                    <p>
+                        Para llevar el rigor académico más allá del papel (redactado íntegramente en LaTeX), el proyecto evolucionó hacia un formato visual. Se diseñaron, editaron y registraron en el Registro de la Propiedad Intelectual un total de <strong>diecinueve vídeos educativos</strong>.
+                    </p>
+                    <p>
+                        El objetivo principal fue transformar conceptos abstractos de álgebra y geometría en contenido accesible y atractivo para un público amplio a través de plataformas digitales de formato corto.
+                    </p>
+                </section>
+
+                <div class="flex flex-wrap gap-2 pt-4">
+                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">LaTeX</span>
+                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Álgebra Espacial</span>
+                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Divulgación Científica</span>
+                </div>
+            </div>
+
+            <!-- Columna del Mockup (Ocupa 2 columnas) -->
+            <div class="lg:col-span-2 flex flex-col items-center justify-center p-8 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50 shadow-inner">
+                <p class="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-6">Demostración Interactiva</p>
+                
+                <!-- Mockup Smartphone iPhone style -->
+                <div class="relative w-[260px] h-[520px] rounded-[3rem] border-[8px] border-neutral-900 dark:border-neutral-800 bg-black overflow-hidden shadow-2xl flex flex-col items-center justify-center group">
+                    
+                    <!-- Isla dinámica / Notch -->
+                    <div class="absolute top-0 w-32 h-6 bg-neutral-900 dark:bg-neutral-800 rounded-b-3xl z-20"></div>
+
+                    <!-- Contenido de la pantalla -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center gap-5 bg-gradient-to-br from-neutral-800 to-black text-center p-6 z-10 transition-transform duration-500 group-hover:scale-105">
+                        <div class="w-14 h-14 rounded-full bg-white text-black flex items-center justify-center shadow-lg shadow-white/10">
+                            <svg class="w-7 h-7 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="text-base font-bold text-white">Geometría Visual</span>
+                            <span class="text-xs text-neutral-400">@inmaosm</span>
+                        </div>
+                        <a href="https://www.tiktok.com/@inmaosm?is_from_webapp=1&sender_device=pc" target="_blank" class="mt-4 px-6 py-2.5 text-sm font-bold text-neutral-900 bg-white rounded-full hover:bg-rose-500 hover:text-white transition-colors shadow-lg">
+                            Abrir en TikTok
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>

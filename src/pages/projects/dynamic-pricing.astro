@@ -1,0 +1,64 @@
+---
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout
+    seo={{
+        title: "Motor de Dynamic Pricing — Inmaculada Osuna",
+        description: "Optimización de capacidad en el transporte interurbano con Deep Reinforcement Learning.",
+    }}
+>
+    <div class="flex flex-col gap-10 py-12 max-w-3xl mx-auto antialiased">
+        
+        <div>
+            <a href="/projects" class="text-sm font-semibold text-rose-500 hover:text-rose-600 transition-colors inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Volver a Proyectos
+            </a>
+        </div>
+
+        <header class="flex flex-col gap-4 border-b border-neutral-200 dark:border-neutral-800 pb-8">
+            <div class="flex items-center gap-2">
+                <span class="px-3 py-1 text-xs font-bold tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800/50">DEEP RL & BIG DATA</span>
+                <span class="text-sm font-medium text-neutral-500">TFM — UCM (Madrid)</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-white">
+                Sistema Inteligente de Dynamic Pricing
+            </h1>
+            <p class="text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 leading-relaxed mt-2">
+                Optimización de capacidad y motores de precios en el transporte interurbano ferroviario mediante arquitecturas de Deep Reinforcement Learning.
+            </p>
+        </header>
+
+        <div class="flex flex-col gap-10 text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            
+            <section class="flex flex-col gap-3">
+                <h3 class="font-bold text-neutral-900 dark:text-white text-xl flex items-center gap-2">
+                    <span class="text-rose-500">◆</span> El Caso de Negocio
+                </h3>
+                <p>
+                    El proyecto aborda el reto del <em>revenue management</em> en el sector del transporte interurbano (aplicado al entorno de Renfe). El objetivo fue diseñar un motor algorítmico capaz de ajustar los precios de forma dinámica en base a la demanda, la antelación de compra y la capacidad disponible, maximizando así la rentabilidad de las rutas sin comprometer la ocupación.
+                </p>
+            </section>
+
+            <section class="flex flex-col gap-3">
+                <h3 class="font-bold text-neutral-900 dark:text-white text-xl flex items-center gap-2">
+                    <span class="text-rose-500">◆</span> Arquitectura y Solución Técnica
+                </h3>
+                <p>
+                    Para resolver este problema complejo de toma de decisiones secuenciales, se implementaron modelos de <strong>Deep Reinforcement Learning (DRL)</strong>. El agente inteligente fue entrenado para aprender las mejores políticas de precios a través de la interacción continua con entornos simulados de demanda.
+                </p>
+                <p>
+                    Todo el pipeline de procesamiento de datos y entrenamiento a gran escala fue orquestado utilizando <strong>PySpark</strong>. Posteriormente, la solución se empaquetó e integró en una aplicación interactiva desarrollada en <strong>Streamlit</strong>, permitiendo visualizar las variaciones de precio, las métricas de ocupación y el impacto en los ingresos en tiempo real.
+                </p>
+            </section>
+
+            <div class="flex flex-wrap gap-3 pt-2">
+                <span class="px-4 py-2 text-xs font-bold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-xl dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Python</span>
+                <span class="px-4 py-2 text-xs font-bold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-xl dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">PySpark</span>
+                <span class="px-4 py-2 text-xs font-bold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-xl dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Streamlit</span>
+                <span class="px-4 py-2 text-xs font-bold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-xl dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Deep Reinforcement Learning</span>
+            </div>
+        </div>
+    </div>
+</Layout>

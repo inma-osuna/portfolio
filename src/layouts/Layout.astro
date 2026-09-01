@@ -5,6 +5,7 @@ import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "@fontsource/inter/800.css";
+import "@fontsource-variable/fraunces";
 import type { Props as SeoProps } from "astro-seo";
 import { SEO } from "astro-seo";
 import { ClientRouter } from "astro:transitions";
@@ -34,7 +35,7 @@ const { seo } = Astro.props;
         <DarkModeScript />
         <ClientRouter />
     </head>
-    <body class="relative min-h-screen overflow-x-hidden selection:bg-rose-200 dark:selection:bg-rose-900 bg-white dark:bg-neutral-950">
+    <body class="relative min-h-screen overflow-x-hidden selection:bg-accent-100 selection:text-accent-700 dark:selection:bg-accent-700 dark:selection:text-white bg-paper dark:bg-neutral-950">
         
         <PageContainer>
             <Header />

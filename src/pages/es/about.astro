@@ -1,7 +1,7 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Section from "@/components/Section.astro";
-import EducationCard from "@/components/Resume/EducationCard.astro";
+import Layout from "../../layouts/Layout.astro";
+import Section from "../../components/Section.astro";
+import EducationCard from "../../components/Resume/EducationCard.astro";
 ---
 
 <Layout
@@ -17,17 +17,16 @@ import EducationCard from "@/components/Resume/EducationCard.astro";
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-rose-500 to-orange-400">Sobre mí</span>
             </h1>
             <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed text-lg mt-2">
-                <strong class="text-neutral-900 dark:text-neutral-100 font-semibold">Data Engineer, Data Scientist y Data Analyst.</strong> Afincada en Granada, ciudad donde me gradué como Matemática y a la que sigo estrechamente vinculada a nivel académico, combino una sólida base cuantitativa con habilidades avanzadas en ingeniería de datos para resolver problemas de negocio complejos.
+                <strong class="text-neutral-900 dark:text-neutral-100 font-semibold">Data Engineer, Data Scientist y Data Analyst.</strong> Afincada en Granada, ciudad donde me gradué como Matemática y a la que sigo estrechamente vinculada a nivel académico, combino una sólida base cuantitativa con habilidades avanzadas en ingeniería de datos para resolver problemas de negocio complejos[cite: 2].
             </p>
             <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed text-lg">
-                Especializada a través del <strong class="font-medium text-neutral-800 dark:text-neutral-200">Máster en Big Data, Ciencia de Datos & IA (UCM)</strong> y el <strong class="font-medium text-neutral-800 dark:text-neutral-200">Máster en Técnicas Cuantitativas en Gestión Empresarial (UGR)</strong>, soy una apasionada por la automatización y el desarrollo de sistemas que transforman grandes volúmenes de información en decisiones estratégicas.
+                Especializada a través del <strong class="font-medium text-neutral-800 dark:text-neutral-200">Máster en Big Data, Ciencia de Datos & IA (UCM)</strong> y el <strong class="font-medium text-neutral-800 dark:text-neutral-200">Máster en Técnicas Cuantitativas en Gestión Empresarial (UGR)</strong>, soy una apasionada por la automatización y el desarrollo de sistemas que transforman grandes volúmenes de información en decisiones estratégicas[cite: 2].
             </p>
         </section>
 
         <!-- Certificaciones -->
         <Section title="Certificaciones & Logros">
             <div class="inline-flex items-center gap-5 p-5 pr-8 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
-                <!-- Icono Snowflake Geométrico y Estable -->
                 <div class="w-14 h-14 rounded-full bg-[#29b5e8]/10 flex items-center justify-center text-[#29b5e8]">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -57,23 +56,22 @@ import EducationCard from "@/components/Resume/EducationCard.astro";
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
                 <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm shadow-sm hover:shadow-lg hover:shadow-rose-500/5 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center">
                     <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Idiomas</h3>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Español: Nativo<br>Inglés: Nivel C1</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Español: Nativo<br>Inglés: Nivel C1[cite: 2]</p>
                 </div>
                 <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm shadow-sm hover:shadow-lg hover:shadow-orange-500/5 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center">
                     <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Conducción</h3>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Permiso B y vehículo propio</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Permiso B y vehículo propio[cite: 2]</p>
                 </div>
                 <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm shadow-sm hover:shadow-lg hover:shadow-rose-500/5 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center">
                     <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Movilidad</h3>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Nacional e internacional</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Nacional e internacional[cite: 2]</p>
                 </div>
             </div>
         </Section>
 
-        <!-- Skills en Formato Etiquetas -->
+        <!-- Competencias Técnicas -->
         <Section title="Competencias Técnicas">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                
                 <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm hover:border-rose-300 dark:hover:border-rose-700 transition-colors">
                     <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-4 flex items-center gap-2">
                         <span class="text-rose-500">◆</span> Ingeniería & Cloud
@@ -128,7 +126,6 @@ import EducationCard from "@/components/Resume/EducationCard.astro";
                         <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Modelado PLS-SEM</span>
                     </div>
                 </div>
-
             </div>
         </Section>
 
@@ -140,7 +137,7 @@ import EducationCard from "@/components/Resume/EducationCard.astro";
                         <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg group-hover:text-rose-500 transition-colors">Prácticas Extracurriculares</h3>
                         <span class="px-3 py-1 text-xs font-bold tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800/50">NTTDATA</span>
                     </div>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Orquestación de datos y análisis en la nube utilizando Microsoft Fabric. Desarrollo de soluciones low-code y automatización de flujos de trabajo con Power Apps y Power Automate. Participación en procesos de extracción, transformación y carga (ETL/ELT) de datos.</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Orquestación de datos y análisis en la nube utilizando Microsoft Fabric[cite: 2]. Desarrollo de soluciones low-code y automatización de flujos de trabajo con Power Apps y Power Automate[cite: 2]. Participación en procesos de extracción, transformación y carga (ETL/ELT) de datos[cite: 2].</p>
                 </div>
             </div>
         </Section>
@@ -148,31 +145,29 @@ import EducationCard from "@/components/Resume/EducationCard.astro";
         <!-- Proyectos y Tesis -->
         <Section title="Proyectos y Tesis" id="projects">
             <div class="flex flex-col gap-5">
-                
-                <a href="/projects/dynamic-pricing" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 flex flex-col gap-3 group cursor-pointer text-left block">
+                <a href="/es/projects/dynamic-pricing" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 flex flex-col gap-3 group cursor-pointer text-left block">
                     <div class="flex justify-between items-center">
                         <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg group-hover:text-rose-500 transition-colors">Sistema Inteligente de Dynamic Pricing (TFM)</h3>
-                        <span class="px-3 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-full dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">UCM, Madrid</span>
+                        <span class="px-3 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-full dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">UCM, Madrid[cite: 2]</span>
                     </div>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Sistema Inteligente de Dynamic Pricing y Optimización de Capacidad en el Transporte Interurbano mediante Deep Reinforcement Learning.</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Sistema Inteligente de Dynamic Pricing y Optimización de Capacidad en el Transporte Interurbano mediante Deep Reinforcement Learning[cite: 2].</p>
                 </a>
 
-                <a href="/projects/influencers" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-orange-300 dark:hover:border-orange-700 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/10 hover:-translate-y-1 flex flex-col gap-3 group cursor-pointer text-left block">
+                <a href="/es/projects/influencers" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-orange-300 dark:hover:border-orange-700 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/10 hover:-translate-y-1 flex flex-col gap-3 group cursor-pointer text-left block">
                     <div class="flex justify-between items-center">
                         <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg group-hover:text-orange-500 transition-colors">Análisis de Influencers Virtuales (TFM)</h3>
-                        <span class="px-3 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-full dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">UGR, Granada</span>
+                        <span class="px-3 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-full dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">UGR, Granada[cite: 2]</span>
                     </div>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Análisis del impacto y percepción de los Influencers Virtuales. Diseño del estudio y modelado de ecuaciones estructurales (PLS-SEM) a partir de datos de encuestas para extraer insights de comportamiento y métricas de negocio.</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Análisis del impacto y percepción de los Influencers Virtuales. Diseño del estudio y modelado de ecuaciones estructurales (PLS-SEM) a partir de datos de encuestas para extraer insights de comportamiento y métricas de negocio[cite: 2].</p>
                 </a>
 
-                <a href="/projects/alhambra" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 flex flex-col gap-3 group cursor-pointer text-left block">
+                <a href="/es/projects/alhambra" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 flex flex-col gap-3 group cursor-pointer text-left block">
                     <div class="flex justify-between items-center">
                         <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg group-hover:text-rose-500 transition-colors">Geometría de la Alhambra (TFG)</h3>
-                        <span class="px-3 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-full dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">UGR, Granada</span>
+                        <span class="px-3 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-full dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">UGR, Granada[cite: 2]</span>
                     </div>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Proyecto de divulgación científica combinando rigor académico y creatividad, centrado en el modelado y análisis de la geometría de los mosaicos de la Alhambra.</p>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Proyecto de divulgación científica combinando rigor académico y creatividad, centrado en el modelado y análisis de la geometría de los mosaicos de la Alhambra[cite: 2].</p>
                 </a>
-
             </div>
         </Section>
 
@@ -183,30 +178,29 @@ import EducationCard from "@/components/Resume/EducationCard.astro";
                 href="#"
                 startDate="2025"
                 endDate="2026"
-                location="Universidad Complutense de Madrid"
+                location="Universidad Complutense de Madrid[cite: 2]"
             />
             <EducationCard
                 title="Máster en Técnicas Cuantitativas en Gestión Empresarial"
                 href="#"
                 startDate="2025"
                 endDate="2026"
-                location="Universidad de Granada"
+                location="Universidad de Granada[cite: 2]"
             />
             <EducationCard
                 title="Bootcamp Data Engineering"
                 href="#"
                 startDate="Sep 2025"
                 endDate="Dic 2025"
-                location="Fundación AI Granada Research & Innovation, T-Systems y Google Cloud"
+                location="Fundación AI Granada Research & Innovation, T-Systems y Google Cloud[cite: 2]"
             />
             <EducationCard
                 title="Grado en Matemáticas"
                 href="#"
                 startDate="2020"
                 endDate="2025"
-                location="Universidad de Granada"
+                location="Universidad de Granada[cite: 2]"
             />
         </Section>
-
     </div>
 </Layout>

@@ -27,38 +27,55 @@ import Layout from "@/layouts/Layout.astro";
             
             <span class="text-base font-medium text-neutral-500 dark:text-neutral-400 mb-6 flex items-center gap-2">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0v7"></path></svg>
-                TFG — Universidad de Granada
+                TFG — Universidad de Granada .
             </span>
             
             <p class="text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-                Análisis y modelado matemático de los 17 grupos cristalográficos planos presentes en los mosaicos del monumento, llevado a la divulgación digital.
+                Análisis y modelado matemático de los 17 grupos cristalográficos planos presentes en los mosaicos del monumento, llevado a la divulgación digital ..
             </p>
         </header>
 
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start mt-4">
+            <!-- COLUMNA DE TEXTO MEJORADA -->
             <div class="lg:col-span-3 flex flex-col gap-8 text-neutral-600 dark:text-neutral-400 leading-relaxed">
                 <section class="flex flex-col gap-3">
-                    <h3 class="font-bold text-neutral-900 dark:text-white text-xl">El reto matemático</h3>
+                    <h3 class="font-bold text-neutral-900 dark:text-white text-xl flex items-center gap-2">
+                        <span class="text-rose-500">◆</span> El Reto Matemático e Histórico
+                    </h3>
                     <p>
-                        Los palacios nazaríes de la Alhambra albergan una de las mayores muestras de simetría ornamental del mundo. Este proyecto se centró en demostrar y estructurar matemáticamente cómo estos patrones repetitivos encajan en la teoría de los grupos cristalográficos bidimensionales (los 17 grupos de simetría plana).
+                        La decoración de los palacios nazaríes de la Alhambra constituye un hito sin parangón en la historia de la geometría. Aunque la demostración matemática de que existen exactamente 17 grupos cristalográficos planos fue formalizada a finales del siglo XIX por Fedorov y Schönflies, los artesanos andalusíes lograron plasmar la totalidad de estos grupos en sus mosaicos y alicatados varios siglos antes ..
+                    </p>
+                    <p>
+                        Este proyecto de investigación se centró en identificar, demostrar y estructurar matemáticamente cómo estos intrincados patrones repetitivos encajan a la perfección en la teoría de la simetría plana, empleando la notación de Conway para clasificar cada mosaico de forma visual e intuitiva ..
                     </p>
                 </section>
 
                 <section class="flex flex-col gap-3">
-                    <h3 class="font-bold text-neutral-900 dark:text-white text-xl">Divulgación y Propiedad Intelectual</h3>
+                    <h3 class="font-bold text-neutral-900 dark:text-white text-xl flex items-center gap-2">
+                        <span class="text-rose-500">◆</span> Divulgación y Propiedad Intelectual
+                    </h3>
                     <p>
-                        Para llevar el rigor académico más allá del papel (redactado íntegramente en LaTeX), el proyecto evolucionó hacia un formato visual. Se diseñaron, editaron y registraron en el Registro de la Propiedad Intelectual un total de <strong>diecinueve vídeos educativos</strong>.
+                        Para llevar el rigor de la Geometría Euclidiana más allá de la memoria académica (redactada y maquetada íntegramente en LaTeX), la investigación evolucionó hacia un formato visual e interactivo .. Se diseñaron, editaron y registraron en el Registro de la Propiedad Intelectual un total de <strong>diecinueve vídeos educativos</strong> ..
                     </p>
                     <p>
-                        El objetivo principal fue transformar conceptos abstractos de geometría en contenido accesible y atractivo para un público amplio a través de plataformas digitales de formato corto.
+                        Mediante el uso de herramientas como GeoGebra y una edición adaptada al lenguaje de redes sociales (TikTok e Instagram), se logró superponer el "esqueleto matemático" —centros de rotación, ejes de reflexión y reflexiones con deslizamiento— directamente sobre filmaciones reales del monumento, revelando la matemática oculta tras la piedra ..
+                    </p>
+                </section>
+
+                <section class="flex flex-col gap-3">
+                    <h3 class="font-bold text-neutral-900 dark:text-white text-xl flex items-center gap-2">
+                        <span class="text-rose-500">◆</span> Impacto Cultural y Educativo
+                    </h3>
+                    <p>
+                        El objetivo final del TFG fue transformar conceptos abstractos de álgebra y geometría en contenido accesible y atractivo para el público general, demostrando que la ciencia y el arte hablan el mismo idioma .. Este enfoque no solo enriquece la experiencia turística al aportar una nueva dimensión de lectura del monumento, sino que promueve de manera activa la conservación y puesta en valor del patrimonio andalusí ..
                     </p>
                 </section>
 
                 <div class="flex flex-wrap gap-2 pt-4">
-                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">LaTeX</span>
-                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Geometría</span>
-                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Alhambra</span>
-                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">Divulgación Científica</span>
+                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Geometría Euclidiana</span>
+                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Grupos Cristalográficos</span>
+                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">GeoGebra / LaTeX</span>
+                    <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-lg dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Divulgación Científica</span>
                 </div>
             </div>
 
@@ -88,6 +105,7 @@ import Layout from "@/layouts/Layout.astro";
             </div>
         </div>
 
+        <!-- GALERÍA INTERACTIVA -->
         <section class="mt-8 flex flex-col gap-8 border-t border-neutral-200 dark:border-neutral-800 pt-12">
             <div class="flex flex-col gap-3">
                 <h3 class="font-bold text-neutral-900 dark:text-white text-2xl">Explorador de Mosaicos</h3>
@@ -95,6 +113,7 @@ import Layout from "@/layouts/Layout.astro";
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Tarjeta Interactiva 1 -->
                 <div class="relative group aspect-square rounded-3xl overflow-hidden bg-neutral-200 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 shadow-sm cursor-pointer">
                     <img src="/mosaico-4-2.png" alt="Mosaico 4*2 Alhambra" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://placehold.co/400x400/171717/333333?text=A%C3%B1adir+Foto+4*2'" />
                     <div class="absolute inset-0 bg-neutral-900/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center backdrop-blur-md">
@@ -105,6 +124,7 @@ import Layout from "@/layouts/Layout.astro";
                     </div>
                 </div>
 
+                <!-- Tarjeta Interactiva 2 -->
                 <div class="relative group aspect-square rounded-3xl overflow-hidden bg-neutral-200 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 shadow-sm cursor-pointer">
                     <img src="/mosaico-o.jpg" alt="Mosaico o (Pajarita Nazarí) Alhambra" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://placehold.co/400x400/171717/333333?text=A%C3%B1adir+Foto+o'" />
                     <div class="absolute inset-0 bg-neutral-900/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center backdrop-blur-md">
@@ -113,6 +133,7 @@ import Layout from "@/layouts/Layout.astro";
                     </div>
                 </div>
 
+                <!-- Tarjeta Interactiva 3 -->
                 <div class="relative group aspect-square rounded-3xl overflow-hidden bg-neutral-200 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 shadow-sm cursor-pointer">
                     <img src="/632.png" alt="Mosaico 632 Alhambra" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://placehold.co/400x400/171717/333333?text=A%C3%B1adir+Foto+632'" />
                     <div class="absolute inset-0 bg-neutral-900/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center backdrop-blur-md">

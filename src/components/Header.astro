@@ -2,20 +2,27 @@
 import { Icon } from "astro-icon/components";
 
 const pathname = Astro.url.pathname;
+
+// Detectar si el usuario está en la versión inglesa
+const isEnglish = pathname.startsWith("/en");
+const langPrefix = isEnglish ? "/en" : "/es";
+
+// Enlaces dinámicos según el idioma actual
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
-  { href: "/about", label: "About" },
+  { href: `${langPrefix}/`, label: isEnglish ? "Home" : "Inicio" },
+  { href: `${langPrefix}/projects`, label: isEnglish ? "Projects" : "Proyectos" },
+  { href: `${langPrefix}/about`, label: isEnglish ? "About" : "Sobre mí" },
 ];
 
 function isActive(href: string) {
-  if (href === "/") return pathname === "/";
+  if (href === "/es/" || href === "/en/") return pathname === href;
   return pathname.startsWith(href);
 }
 ---
 
 <div class="fixed top-4 left-1/2 -translate-x-1/2 z-50">
-  <nav class="flex items-center gap-1 px-2 py-2 rounded-full border border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md shadow-sm">
+  <nav class="flex items-center gap-1 px-3 py-2 rounded-full border border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md shadow-sm">
+    
     <!-- Desktop nav -->
     <div class="hidden md:flex items-center gap-1">
       {navLinks.map(({ href, label }) => (
@@ -24,7 +31,7 @@ function isActive(href: string) {
           class:list={[
             "px-4 py-1.5 rounded-full text-sm font-medium transition-colors",
             isActive(href)
-              ? "text-neutral-900 dark:text-neutral-100 font-semibold"
+              ? "text-neutral-900 dark:text-neutral-100 font-semibold bg-neutral-100 dark:bg-neutral-800"
               : "text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100",
           ]}
         >
@@ -33,11 +40,34 @@ function isActive(href: string) {
       ))}
     </div>
 
+    <!-- Selector de Idioma Integrado -->
+    <div class="flex items-center gap-2 ml-2 pl-3 border-l border-neutral-200 dark:border-neutral-800 text-xs font-bold">
+        <a 
+          href="/es/" 
+          class:list={[
+            "px-2 py-1 rounded-md transition-colors",
+            !isEnglish ? "text-neutral-900 dark:text-white bg-neutral-100 dark:bg-neutral-800" : "text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200"
+          ]}
+        >
+          ES
+        </a>
+        <span class="text-neutral-300 dark:text-neutral-700">/</span>
+        <a 
+          href="/en/" 
+          class:list={[
+            "px-2 py-1 rounded-md transition-colors",
+            isEnglish ? "text-neutral-900 dark:text-white bg-neutral-100 dark:bg-neutral-800" : "text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200"
+          ]}
+        >
+          EN
+        </a>
+    </div>
+
     <!-- Mobile menu button -->
     <button
       id="mobile-menu-button"
       type="button"
-      class="md:hidden p-2 rounded-full text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+      class="md:hidden p-2 ml-1 rounded-full text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
       aria-label="Open menu"
     >
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -45,6 +75,7 @@ function isActive(href: string) {
       </svg>
     </button>
 
+    <!-- Theme Toggle -->
     <button
       id="theme-toggle-button"
       type="button"
@@ -58,15 +89,15 @@ function isActive(href: string) {
 </div>
 
 <!-- Mobile menu dropdown -->
-<div id="mobile-menu" class="hidden fixed top-16 left-1/2 -translate-x-1/2 z-50 md:hidden">
-  <div class="flex flex-col gap-1 px-3 py-3 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md shadow-lg">
+<div id="mobile-menu" class="hidden fixed top-20 left-1/2 -translate-x-1/2 z-50 md:hidden w-[90%] max-w-xs">
+  <div class="flex flex-col gap-1 p-3 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md shadow-lg">
     {navLinks.map(({ href, label }) => (
       <a
         href={href}
         class:list={[
-          "px-4 py-2 rounded-full text-sm font-medium transition-colors",
+          "px-4 py-2.5 rounded-xl text-sm font-medium transition-colors text-center",
           isActive(href)
-            ? "text-neutral-900 dark:text-neutral-100 font-semibold"
+            ? "text-neutral-900 dark:text-neutral-100 font-semibold bg-neutral-100 dark:bg-neutral-800"
             : "text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100",
         ]}
       >
@@ -84,18 +115,11 @@ function isActive(href: string) {
     const btn = document.getElementById("mobile-menu-button");
     const menu = document.getElementById("mobile-menu");
     if (btn && menu) {
-      btn.addEventListener("click", () => {
+      btn.onclick = () => {
         menu.classList.toggle("hidden");
-      });
+      };
     }
   }
   setupMobileMenu();
   document.addEventListener("astro:after-swap", setupMobileMenu);
 </script>
-
-<!-- Selector de Idioma -->
-    <div class="flex items-center gap-3 ml-4 border-l border-neutral-200 dark:border-neutral-800 pl-4">
-        <a href="/es/" class="text-xs font-bold text-neutral-500 hover:text-neutral-900 dark:hover:text-white transition-colors">ES</a>
-        <span class="text-neutral-300 dark:text-neutral-700">/</span>
-        <a href="/en/" class="text-xs font-bold text-neutral-500 hover:text-neutral-900 dark:hover:text-white transition-colors">EN</a>
-    </div>

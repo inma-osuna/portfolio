@@ -1,5 +1,5 @@
 ---
-import Layout from "../../../layouts/Layout.astro";
+import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout
@@ -9,8 +9,6 @@ import Layout from "../../../layouts/Layout.astro";
     }}
 >
     <div class="flex flex-col gap-10 py-12 max-w-4xl mx-auto antialiased">
-        
-        <!-- Botón Volver -->
         <div>
             <a href="/es/projects" class="text-sm font-semibold text-rose-500 hover:text-rose-600 transition-colors inline-flex items-center gap-1.5">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
@@ -18,7 +16,6 @@ import Layout from "../../../layouts/Layout.astro";
             </a>
         </div>
 
-        <!-- CABECERA -->
         <header class="flex flex-col border-b border-neutral-200 dark:border-neutral-800 pb-8">
             <div class="mb-5">
                 <span class="px-3 py-1.5 text-xs font-bold tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800/50">MATEMÁTICAS & DIVULGACIÓN</span>
@@ -38,10 +35,7 @@ import Layout from "../../../layouts/Layout.astro";
             </p>
         </header>
 
-        <!-- Contenido y TikTok -->
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start mt-4">
-            
-            <!-- Columna de Texto -->
             <div class="lg:col-span-3 flex flex-col gap-8 text-neutral-600 dark:text-neutral-400 leading-relaxed">
                 <section class="flex flex-col gap-3">
                     <h3 class="font-bold text-neutral-900 dark:text-white text-xl">El reto matemático</h3>
@@ -68,7 +62,6 @@ import Layout from "../../../layouts/Layout.astro";
                 </div>
             </div>
 
-            <!-- Columna del Mockup de TikTok -->
             <div class="lg:col-span-2 flex flex-col items-center justify-center p-6 rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50 shadow-inner">
                 <p class="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-6 text-center">Vídeo de Presentación</p>
                 
@@ -95,7 +88,6 @@ import Layout from "../../../layouts/Layout.astro";
             </div>
         </div>
 
-        <!-- GALERÍA INTERACTIVA DE MOSAICOS REALES -->
         <section class="mt-8 flex flex-col gap-8 border-t border-neutral-200 dark:border-neutral-800 pt-12">
             <div class="flex flex-col gap-3">
                 <h3 class="font-bold text-neutral-900 dark:text-white text-2xl">Explorador de Mosaicos</h3>
@@ -103,10 +95,8 @@ import Layout from "../../../layouts/Layout.astro";
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <!-- Tarjeta Interactiva 1 (Grupo 4*2) -->
                 <div class="relative group aspect-square rounded-3xl overflow-hidden bg-neutral-200 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 shadow-sm cursor-pointer">
                     <img src="/mosaico-4-2.png" alt="Mosaico 4*2 Alhambra" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://placehold.co/400x400/171717/333333?text=A%C3%B1adir+Foto+4*2'" />
-                    
                     <div class="absolute inset-0 bg-neutral-900/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center backdrop-blur-md">
                         <span class="font-extrabold text-4xl tracking-widest mb-2 font-mono">
                             <span class="text-blue-400">4</span><span class="text-rose-500">*2</span>
@@ -115,28 +105,22 @@ import Layout from "../../../layouts/Layout.astro";
                     </div>
                 </div>
 
-                <!-- Tarjeta Interactiva 2 (Grupo o) -->
                 <div class="relative group aspect-square rounded-3xl overflow-hidden bg-neutral-200 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 shadow-sm cursor-pointer">
                     <img src="/mosaico-o.jpg" alt="Mosaico o (Pajarita Nazarí) Alhambra" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://placehold.co/400x400/171717/333333?text=A%C3%B1adir+Foto+o'" />
-                    
                     <div class="absolute inset-0 bg-neutral-900/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center backdrop-blur-md">
                         <span class="text-blue-400 font-extrabold text-4xl tracking-widest mb-2 font-mono">o</span>
                         <p class="text-white text-sm font-medium leading-relaxed">Sin giros, simetrías axiales ni simetrías deslizantes. Conocido por el famoso patrón de la <strong>pajarita nazarí</strong>.</p>
                     </div>
                 </div>
 
-                <!-- Tarjeta Interactiva 3 (Grupo 632) -->
                 <div class="relative group aspect-square rounded-3xl overflow-hidden bg-neutral-200 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 shadow-sm cursor-pointer">
                     <img src="/632.png" alt="Mosaico 632 Alhambra" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://placehold.co/400x400/171717/333333?text=A%C3%B1adir+Foto+632'" />
-                    
                     <div class="absolute inset-0 bg-neutral-900/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center backdrop-blur-md">
                         <span class="text-blue-400 font-extrabold text-4xl tracking-widest mb-2 font-mono">632</span>
                         <p class="text-white text-sm font-medium leading-relaxed">Giro mínimo de 60° sin ningún tipo de simetría axial ni deslizante.</p>
                     </div>
                 </div>
-
             </div>
         </section>
-
     </div>
 </Layout>

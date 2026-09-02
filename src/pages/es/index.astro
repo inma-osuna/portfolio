@@ -1,206 +1,133 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import Section from "../../components/Section.astro";
-import EducationCard from "../../components/Resume/EducationCard.astro";
+import Layout from "@/layouts/Layout.astro";
+import Section from "@/components/Section.astro";
 ---
 
 <Layout
     seo={{
-        title: "Sobre mí",
-        description: "Sobre Inmaculada Osuna — formación, habilidades y experiencia",
+        title: "Portfolio | Inmaculada Osuna",
+        description: "Portfolio de Inmaculada Osuna: Data Engineer, Data Scientist y Data Analyst.",
     }}
 >
     <div class="flex flex-col gap-16 py-12 antialiased">
-        <!-- Introduction -->
-        <section class="flex flex-col gap-4 max-w-2xl">
-            <h1 class="text-3xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-100">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-rose-500 to-orange-400">Sobre mí</span>
+        <!-- Hero Section -->
+        <section class="flex flex-col items-center text-center gap-6 mt-4">
+            
+            <!-- Status Badge de Disponibilidad -->
+            <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-emerald-200 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-900/20 shadow-sm mb-2">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                <span class="text-xs font-medium text-emerald-700 dark:text-emerald-400 tracking-wide">
+                    Abierta a nuevos retos | Movilidad Nacional e Internacional
+                </span>
+            </div>
+
+            <!-- Etiquetas de Roles -->
+            <div class="flex flex-wrap justify-center gap-2">
+                <span class="px-3 py-1 text-xs font-bold tracking-widest text-rose-600 bg-rose-50/50 border border-rose-200/60 rounded-full dark:bg-rose-900/10 dark:text-rose-400 dark:border-rose-800/40">DATA ENGINEER</span>
+                <span class="px-3 py-1 text-xs font-bold tracking-widest text-orange-600 bg-orange-50/50 border border-orange-200/60 rounded-full dark:bg-orange-900/10 dark:text-orange-400 dark:border-orange-800/40">DATA SCIENTIST</span>
+                <span class="px-3 py-1 text-xs font-bold tracking-widest text-rose-600 bg-rose-50/50 border border-rose-200/60 rounded-full dark:bg-rose-900/10 dark:text-rose-400 dark:border-rose-800/40">DATA ANALYST</span>
+            </div>
+
+            <!-- Título con Degradado -->
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-neutral-900 dark:text-white mt-2">
+                Hola, soy <br class="sm:hidden" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-rose-500 to-orange-400">Inmaculada Osuna</span>
             </h1>
-            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed text-lg mt-2">
-                <strong class="text-neutral-900 dark:text-neutral-100 font-semibold">Data Engineer, Data Scientist y Data Analyst.</strong> Afincada en Granada, ciudad donde me gradué como Matemática y a la que sigo estrechamente vinculada a nivel académico, combino una sólida base cuantitativa con habilidades avanzadas en ingeniería de datos para resolver problemas de negocio complejos..
+            
+            <p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl mt-1">
+                Especializada en Big Data, Algoritmos de Deep Learning y Arquitecturas Cloud. Transformando volúmenes complejos de información en decisiones estratégicas.
             </p>
-            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed text-lg">
-                Especializada a través del <strong class="font-medium text-neutral-800 dark:text-neutral-200">Máster en Big Data, Ciencia de Datos & IA (UCM)</strong> y el <strong class="font-medium text-neutral-800 dark:text-neutral-200">Máster en Técnicas Cuantitativas en Gestión Empresarial (UGR)</strong>, soy una apasionada por la automatización y el desarrollo de sistemas que transforman grandes volúmenes de información en decisiones estratégicas..
-            </p>
+            
+            <!-- Botones y CVs -->
+            <div class="flex flex-wrap justify-center items-center gap-4 mt-6">
+                <a
+                    href="/es/projects"
+                    class="inline-flex items-center px-6 py-2.5 rounded-full bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-sm font-semibold hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all shadow-lg hover:shadow-rose-500/20 hover:-translate-y-0.5"
+                >
+                    Ver Proyectos
+                </a>
+                
+                <!-- Botón Descargar CV (ES) -->
+                <a
+                    href="/CV-Inmaculada Osuna Muñoz_2.pdf"
+                    download="CV_Inmaculada_Osuna_ES.pdf"
+                    class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border-2 border-rose-500 text-sm font-bold text-rose-600 dark:text-rose-400 hover:bg-rose-500 hover:text-white dark:hover:bg-rose-500 dark:hover:text-white transition-all shadow-lg hover:shadow-rose-500/20 hover:-translate-y-0.5"
+                >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    CV (ES)
+                </a>
+
+                <!-- Botón Descargar CV (EN) -->
+                <a
+                    href="/EN-CV-Inmaculada Osuna Muñoz.pdf"
+                    download="CV_Inmaculada_Osuna_EN.pdf"
+                    class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border-2 border-orange-500 text-sm font-bold text-orange-600 dark:text-orange-400 hover:bg-orange-500 hover:text-white dark:hover:bg-orange-500 dark:hover:text-white transition-all shadow-lg hover:shadow-orange-500/20 hover:-translate-y-0.5"
+                >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    CV (EN)
+                </a>
+
+                <a
+                    href="mailto:inmamuba@gmail.com"
+                    class="inline-flex items-center px-6 py-2.5 rounded-full border border-neutral-200 dark:border-neutral-800 text-sm font-semibold text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all hover:-translate-y-0.5"
+                >
+                    Contactar
+                </a>
+            </div>
         </section>
 
-        <!-- Certificaciones -->
-        <Section title="Certificaciones & Logros">
-            <div class="inline-flex items-center gap-5 p-5 pr-8 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
-                <div class="w-14 h-14 rounded-full bg-[#29b5e8]/10 flex items-center justify-center text-[#29b5e8]">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M10 4l2 1l2 -1" />
-                        <path d="M12 2v6.5l3 1.72" />
-                        <path d="M17.928 6.268l.134 2.232l1.866 1.232" />
-                        <path d="M20.66 7l-5.629 3.25l.01 3.458" />
-                        <path d="M19.928 14.268l-1.866 1.232l-.134 2.232" />
-                        <path d="M20.66 17l-5.629 -3.25l-3.01 1.758" />
-                        <path d="M14 20l-2 -1l-2 1" />
-                        <path d="M12 22v-6.5l-3 -1.72" />
-                        <path d="M6.072 17.732l-.134 -2.232l-1.866 -1.232" />
-                        <path d="M3.34 17l5.629 -3.25l-.01 -3.458" />
-                        <path d="M4.072 9.732l1.866 -1.232l.134 -2.232" />
-                        <path d="M3.34 7l5.629 3.25l3.01 -1.758" />
-                    </svg>
+        <!-- Competencias Destacadas -->
+        <Section title="Competencias Destacadas">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 text-center">
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm shadow-sm hover:shadow-lg hover:shadow-rose-500/5 hover:-translate-y-1 transition-all duration-300">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-2">Lenguajes & Datos</h3>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Python, R, SQL, C++, PySpark y NoSQL</p>
                 </div>
-                <div>
-                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100">Platform Skills Badge</h3>
-                    <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-0.5">Snowflake Computing</p>
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm shadow-sm hover:shadow-lg hover:shadow-orange-500/5 hover:-translate-y-1 transition-all duration-300">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-2">Cloud & Data Eng.</h3>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Fabric, Snowflake, Docker, Cloud y ETL/ELT</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm shadow-sm hover:shadow-lg hover:shadow-rose-500/5 hover:-translate-y-1 transition-all duration-300">
+                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-2">Data Science & IA</h3>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Deep Learning, Redes Neuronales, Optimización y NLP</p>
                 </div>
             </div>
         </Section>
 
-        <!-- Languages & Info -->
-        <Section title="Idiomas & Información">
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm shadow-sm hover:shadow-lg hover:shadow-rose-500/5 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center">
-                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Idiomas</h3>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Español: Nativo<br>Inglés: Nivel C1.</p>
-                </div>
-                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm shadow-sm hover:shadow-lg hover:shadow-orange-500/5 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center">
-                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Conducción</h3>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Permiso B y vehículo propio.</p>
-                </div>
-                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm shadow-sm hover:shadow-lg hover:shadow-rose-500/5 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center">
-                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-1">Movilidad</h3>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400">Nacional e internacional.</p>
-                </div>
-            </div>
-        </Section>
-
-        <!-- Competencias Técnicas -->
-        <Section title="Competencias Técnicas">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm hover:border-rose-300 dark:hover:border-rose-700 transition-colors">
-                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-4 flex items-center gap-2">
-                        <span class="text-rose-500">◆</span> Ingeniería & Cloud
-                    </h3>
-                    <div class="flex flex-wrap gap-2.5">
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Hadoop / Spark</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">PySpark</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Fabric / Azure</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Snowflake</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Google Cloud</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Docker</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">ETL / ELT</span>
-                    </div>
-                </div>
-
-                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm hover:border-orange-300 dark:hover:border-orange-700 transition-colors">
-                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-4 flex items-center gap-2">
-                        <span class="text-orange-500">◆</span> Lenguajes & Bases de Datos
-                    </h3>
-                    <div class="flex flex-wrap gap-2.5">
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Python (Pandas, Sklearn)</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">R (Tidyverse)</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">C++</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">SQL (PostgreSQL, SQL Server)</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">NoSQL (MongoDB)</span>
-                    </div>
-                </div>
-
-                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm hover:border-rose-300 dark:hover:border-rose-700 transition-colors">
-                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-4 flex items-center gap-2">
-                        <span class="text-rose-500">◆</span> Data Science & Modelado
-                    </h3>
-                    <div class="flex flex-wrap gap-2.5">
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Machine / Deep Learning</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Redes Neuronales</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">NLP</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Series Temporales</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Optimización Matemática</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Econometría</span>
-                    </div>
-                </div>
+        <!-- Proyectos y Tesis Destacados -->
+        <Section title="Proyectos y Tesis">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                 
-                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm hover:border-orange-300 dark:hover:border-orange-700 transition-colors">
-                    <h3 class="font-bold text-neutral-900 dark:text-neutral-100 mb-4 flex items-center gap-2">
-                        <span class="text-orange-500">◆</span> Software & BI
-                    </h3>
-                    <div class="flex flex-wrap gap-2.5">
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Streamlit</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Power Apps / Automate</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">LaTeX</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Stata / SPSS</span>
-                        <span class="px-3 py-1.5 text-xs font-semibold text-neutral-700 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-900 dark:text-neutral-300 dark:border-neutral-700 shadow-sm">Modelado PLS-SEM</span>
+                <a href="/es/projects/dynamic-pricing" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 flex flex-col justify-between gap-4 group cursor-pointer text-left">
+                    <div>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-2 group-hover:text-rose-500 transition-colors">Sistema de Dynamic Pricing</h3>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Optimización de capacidad en el transporte interurbano con Deep Reinforcement Learning (TFM UCM).</p>
                     </div>
-                </div>
-            </div>
-        </Section>
-
-        <!-- Experiencia Profesional -->
-        <Section title="Experiencia Profesional" id="experience">
-            <div class="flex flex-col gap-6">
-                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 flex flex-col gap-4 group">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg group-hover:text-rose-500 transition-colors">Prácticas Extracurriculares</h3>
-                        <span class="px-3 py-1 text-xs font-bold tracking-widest text-rose-600 bg-rose-50 border border-rose-200 rounded-full dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800/50">NTTDATA</span>
+                    <span class="text-xs font-semibold text-neutral-500 dark:text-neutral-400 bg-neutral-100 dark:bg-neutral-800 w-fit px-2.5 py-1 rounded-md">PySpark / Streamlit</span>
+                </a>
+                
+                <a href="/es/projects/influencers" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-orange-300 dark:hover:border-orange-700 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/10 hover:-translate-y-1 flex flex-col justify-between gap-4 group cursor-pointer text-left">
+                    <div>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-2 group-hover:text-orange-500 transition-colors">Análisis de Influencers</h3>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Diseño y modelado de ecuaciones estructurales para extraer métricas de negocio (TFM UGR).</p>
                     </div>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Orquestación de datos y análisis en la nube utilizando Microsoft Fabric.. Desarrollo de soluciones low-code y automatización de flujos de trabajo con Power Apps y Power Automate.. Participación en procesos de extracción, transformación y carga (ETL/ELT) de datos..</p>
-                </div>
-            </div>
-        </Section>
-
-        <!-- Proyectos y Tesis -->
-        <Section title="Proyectos y Tesis" id="projects">
-            <div class="flex flex-col gap-5">
-                <a href="/es/projects/dynamic-pricing" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 flex flex-col gap-3 group cursor-pointer text-left block">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg group-hover:text-rose-500 transition-colors">Sistema Inteligente de Dynamic Pricing (TFM)</h3>
-                        <span class="px-3 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-full dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">UCM, Madrid.</span>
-                    </div>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Sistema Inteligente de Dynamic Pricing y Optimización de Capacidad en el Transporte Interurbano mediante Deep Reinforcement Learning..</p>
+                    <span class="text-xs font-semibold text-neutral-500 dark:text-neutral-400 bg-neutral-100 dark:bg-neutral-800 w-fit px-2.5 py-1 rounded-md">R / PLS-SEM</span>
                 </a>
 
-                <a href="/es/projects/influencers" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-orange-300 dark:hover:border-orange-700 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/10 hover:-translate-y-1 flex flex-col gap-3 group cursor-pointer text-left block">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg group-hover:text-orange-500 transition-colors">Análisis de Influencers Virtuales (TFM)</h3>
-                        <span class="px-3 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-full dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">UGR, Granada.</span>
+                <a href="/es/projects/alhambra" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 flex flex-col justify-between gap-4 group cursor-pointer text-left">
+                    <div>
+                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg mb-2 group-hover:text-rose-500 transition-colors">Geometría de la Alhambra</h3>
+                        <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Modelado matemático de los 17 grupos cristalográficos con vídeos educativos (TFG UGR).</p>
                     </div>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Análisis del impacto y percepción de los Influencers Virtuales. Diseño del estudio y modelado de ecuaciones estructurales (PLS-SEM) a partir de datos de encuestas para extraer insights de comportamiento y métricas de negocio..</p>
-                </a>
-
-                <a href="/es/projects/alhambra" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:border-rose-300 dark:hover:border-rose-700 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/10 hover:-translate-y-1 flex flex-col gap-3 group cursor-pointer text-left block">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-neutral-900 dark:text-neutral-100 text-lg group-hover:text-rose-500 transition-colors">Geometría de la Alhambra (TFG)</h3>
-                        <span class="px-3 py-1 text-xs font-semibold text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-full dark:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700">UGR, Granada.</span>
-                    </div>
-                    <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">Proyecto de divulgación científica combinando rigor académico y creatividad, centrado en el modelado y análisis de la geometría de los mosaicos de la Alhambra..</p>
+                    <span class="text-xs font-semibold text-neutral-500 dark:text-neutral-400 bg-neutral-100 dark:bg-neutral-800 w-fit px-2.5 py-1 rounded-md">Matemáticas / LaTeX</span>
                 </a>
             </div>
-        </Section>
-
-        <!-- Education -->
-        <Section title="Educación">
-            <EducationCard
-                title="Máster en Big Data, Ciencia de Datos & IA"
-                href="#"
-                startDate="2025"
-                endDate="2026"
-                location="Universidad Complutense de Madrid."
-            />
-            <EducationCard
-                title="Máster en Técnicas Cuantitativas en Gestión Empresarial"
-                href="#"
-                startDate="2025"
-                endDate="2026"
-                location="Universidad de Granada."
-            />
-            <EducationCard
-                title="Bootcamp Data Engineering"
-                href="#"
-                startDate="Sep 2025"
-                endDate="Dic 2025"
-                location="Fundación AI Granada Research & Innovation, T-Systems y Google Cloud."
-            />
-            <EducationCard
-                title="Grado en Matemáticas"
-                href="#"
-                startDate="2020"
-                endDate="2025"
-                location="Universidad de Granada."
-            />
+            <div class="mt-4">
+                <a href="/es/projects" class="text-sm font-medium text-rose-500 dark:text-rose-400 hover:underline">Ver todos los proyectos &rarr;</a>
+            </div>
         </Section>
     </div>
 </Layout>
